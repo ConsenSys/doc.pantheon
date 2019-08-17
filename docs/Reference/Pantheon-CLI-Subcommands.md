@@ -31,6 +31,8 @@ pantheon --network=rinkeby --data-path=/home/data/ blocks export --start-block=1
 
 Exports a block, or list of blocks from storage to a file in RLP format. 
 
+If `--start-block` or `--end-block` are omitted, then the start block will default to 0 (beginning of the chain), and end block will default to the end of the chain.
+
 If you are not running the command against the default network (Mainnet), then specify the `--network` or `--genesis-file` parameter.
 
 ## public-key
