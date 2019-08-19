@@ -9,6 +9,8 @@ description: Pantheon JSON-RPC API methods reference
     If using the [--rpc-http-host](../Reference/Pantheon-CLI-Syntax.md#rpc-http-host) or [--rpc-http-port](../Reference/Pantheon-CLI-Syntax.md#rpc-http-port)
     options, update the endpoint.  
 
+{!global/Postman.md!}
+
 ## Admin Methods
 
 !!! note
@@ -1476,7 +1478,7 @@ To avoid exposing your private key, create signed transactions offline and send 
 !!!important
     Pantheon does not implement [eth_sendTransaction](../Pantheon-API/Using-JSON-RPC-API.md#account-management). 
     
-    [EthSigner](https://docs.ethsigner.pegasys.tech/en/latest/) provides transaction signing and implements [`eth_sendTransaction`](https://docs.ethsigner.pegasys.tech/en/latest/Using-EthSigner#eth_sendTransaction). 
+    [EthSigner](https://docs.ethsigner.pegasys.tech/) provides transaction signing and implements [`eth_sendTransaction`](https://docs.ethsigner.pegasys.tech/Using-EthSigner/Using-EthSigner/#eth_sendtransaction). 
 
 **Parameters**
 
