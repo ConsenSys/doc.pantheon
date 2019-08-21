@@ -809,7 +809,7 @@ None
 
 **Returns**
 
-`result` : *QUANTITY* - Hexadecimal integer representing the 0-based index of the block that the client is currently processing.
+`result` : *QUANTITY* - Hexadecimal integer representing the index of the block that the client is currently processing.
 
 
 !!! example
