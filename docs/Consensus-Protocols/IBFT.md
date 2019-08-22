@@ -132,9 +132,15 @@ The JSON-RPC methods to add or remove validators are:
 * [ibft_proposeValidatorVote](../Reference/Pantheon-API-Methods.md#ibft_proposeValidatorVote)
 * [ibft_discardValidatorVote](../Reference/Pantheon-API-Methods.md#ibft_discardValidatorVote)
 
-Use [ibft_getSignerMetrics](../Reference/Pantheon-API-Methods.md#ibft_getsignermetrics) to view signer metrics for a specified block range.
+!!! important
+    Adding or removing a validator is subject to agreement by existing validators. Meaning the command to add or remove a validator must
+    be executed on the majority of validators (2/3) to take effect.
 
-To propose adding a validator, call `ibft_proposeValidatorVote` specifying the address of the node to be added and `true`.
+Use [ibft_getSignerMetrics](../Reference/Pantheon-API-Methods.md#ibft_getsignermetrics) to view validator metrics for a specified block range.
+    
+### Adding a Validator
+
+To propose adding a validator, call `ibft_proposeValidatorVote` specifying the address of the proposed validator and `true`. The call must be executed on the majority (at least 2/3) of the validators.
 
 !!! example "JSON-RPC ibft_proposeValidatorVote Request Example"
     ```bash
@@ -159,8 +165,9 @@ To discard your proposal after confirming the validator was added, call `ibft_di
     ```bash
     curl -X POST --data '{"jsonrpc":"2.0","method":"ibft_discardValidatorVote","params":["0xFE3B557E8Fb62b89F4916B721be55cEb828dBd73"], "id":1}' <JSON-RPC-endpoint:port>
     ```
+### Removing a Validator
 
-The process for removing a validator is the same as adding a validator except you specify `false` as the second parameter of `ibft_proposeValidatorVote`. 
+The process for removing a validator is the same as adding a validator except you specify `false` as the second parameter of `ibft_proposeValidatorVote`.
 
 ### Epoch Transition
 
