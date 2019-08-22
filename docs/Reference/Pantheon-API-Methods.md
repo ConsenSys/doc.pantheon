@@ -801,7 +801,7 @@ None
 
 ### eth_blockNumber
 
-Returns the index of the current block the client is processing.
+Returns the index of the block currently being processed.
 
 **Parameters**
 
