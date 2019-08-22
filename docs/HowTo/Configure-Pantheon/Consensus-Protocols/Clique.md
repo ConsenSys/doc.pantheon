@@ -93,9 +93,15 @@ The JSON-RPC methods to add or remove signers are:
 * [clique_getSigners](../../../Reference/Pantheon-API-Methods.md#clique_getsigners)
 * [clique_discard](../../../Reference/Pantheon-API-Methods.md#clique_discard)
 
-Use [clique_getSignerMetrics](../../../Reference/Pantheon-API-Methods.md#clique_getsignermetrics) to view signer metrics for a specified block range.
+!!! important
+    Adding or removing a signer is subject to agreement by existing signers. Meaning the command to add or remove a signer must
+    be executed on the majority of signers (greater than 50%) to take effect.
 
-To propose adding a signer, call `clique_propose` specifying the address of the proposed signer and `true`.
+Use [clique_getSignerMetrics](../Reference/Pantheon-API-Methods.md#clique_getsignermetrics) to view signer metrics for a specified block range.
+
+### Adding a Signer
+
+To propose adding a signer, call `clique_propose` specifying the address of the proposed signer and `true`. The call must be executed on the majority of signers.
 
 !!! example "JSON-RPC clique_propose Request Example"
     ```bash
@@ -119,7 +125,7 @@ To discard your proposal after confirming the signer was added, call `clique_dis
     ```bash
     curl -X POST --data '{"jsonrpc":"2.0","method":"clique_discard","params":["0xFE3B557E8Fb62b89F4916B721be55cEb828dBd73"], "id":1}' <JSON-RPC-endpoint:port>
     ```
-
+### Removing a Signer
 The process for removing a signer is the same as adding a signer except you specify `false` as the 
 second parameter of `clique_propose`. 
 
