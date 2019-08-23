@@ -133,8 +133,7 @@ The JSON-RPC methods to add or remove validators are:
 * [ibft_discardValidatorVote](../Reference/Pantheon-API-Methods.md#ibft_discardValidatorVote)
 
 !!! important
-    Adding or removing a validator is subject to agreement by existing validators. Meaning the command to add or remove a validator must
-    be executed on the majority of validators (2/3) to take effect.
+    A majority of existing validators must agree to add or remove a validator. That is, `ibft_proposeValidatorVote` must be executed by specifying the validator to add or remove on the majority of validators to take effect.
 
 Use [ibft_getSignerMetrics](../Reference/Pantheon-API-Methods.md#ibft_getsignermetrics) to view validator metrics for a specified block range.
     

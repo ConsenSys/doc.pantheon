@@ -94,8 +94,7 @@ The JSON-RPC methods to add or remove signers are:
 * [clique_discard](../Reference/Pantheon-API-Methods.md#clique_discard)
 
 !!! important
-    Adding or removing a signer is subject to agreement by existing signers. Meaning the command to add or remove a signer must
-    be executed on the majority of signers (greater than 50%) to take effect.
+    A majority of existing signers must agree to add or remove a signer. That is, `clique_proposeValidatorVote` must be executed by specifying the signer to add or remove on the majority of signers to take effect.
 
 Use [clique_getSignerMetrics](../Reference/Pantheon-API-Methods.md#clique_getsignermetrics) to view signer metrics for a specified block range.
 
