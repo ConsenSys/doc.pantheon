@@ -154,6 +154,7 @@ nav:
         - Configuration Items in Genesis File: Configuring-Pantheon/Config-Items.md
         - web3.js-eaa Methods: Reference/web3js-eea-Methods.md
         - Accounts for Testing: Configuring-Pantheon/Accounts-for-Testing.md
+        - Security Disclosure Policy: Security/Responsible-Disclosure.md
         - Blog Posts and Webinars: Resources/Resources.md
 
 markdown_extensions:
