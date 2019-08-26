@@ -143,7 +143,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
 curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0xe0776de9a9d4e30be0025c1308eed8bc45502cba9fe22c504a56e2fd95343e6f"],"id":1}' http://localhost:32771/jsonrpc
 ```
 
-The transaction receipt for the [privacy marker transaction](../Privacy/Explanation/Private-Transaction-Processing.md) is displayed with a `contractAddress` of `null`. 
+The transaction receipt for the [privacy marker transaction](../Explanation/Privacy/Private-Transaction-Processing.md) is displayed with a `contractAddress` of `null`. 
 
 ```json
 {

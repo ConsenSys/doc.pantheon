@@ -62,100 +62,100 @@ nav:
         - Create a Private Network using Clique (PoA): Tutorials/Create-Private-Clique-Network.md
         - Create a Private Network using IBFT 2.0 (PoA): Tutorials/Create-IBFT-Network.md
         - Create a Permissioned Network: Tutorials/Create-Permissioned-Network.md
-        - Create a Privacy-Enabled Network: Privacy/Tutorials/Configuring-Privacy.md
-        - Use web3.js-eea Multinode Example: Privacy/Tutorials/eeajs-Multinode-example.md
-        - Get Started with Onchain Permissioning: Permissions/Onchain-Permissioning/Getting-Started-Onchain-Permissioning.md
+        - Create a Privacy-Enabled Network: Tutorials/Configuring-Privacy.md
+        - Use web3.js-eea Multinode Example: Tutorials/eeajs-Multinode-example.md
+        - Get Started with Onchain Permissioning: Tutorials/Getting-Started-Onchain-Permissioning.md
     - How To:
         - Get Started with Pantheon:
-            - Install Binary Distribution: Installation/Install-Binaries.md
-            - Build from Source: Installation/Build-From-Source.md
-            - Start Pantheon: Getting-Started/Starting-Pantheon.md
-            - Run Pantheon from Docker Image: Getting-Started/Run-Docker-Image.md
-            - Migrate from pre v1.2 Docker Image: Deploying-Pantheon/Migration-Docker.md
+            - Install Binary Distribution: HowTo/Get-Started/Install-Binaries.md
+            - Build from Source: HowTo/Get-Started/Build-From-Source.md
+            - Start Pantheon: HowTo/Get-Started/Starting-Pantheon.md
+            - Run Pantheon from Docker Image: HowTo/Get-Started/Run-Docker-Image.md
+            - Migrate from pre v1.2 Docker Image: HowTo/Get-Started/Migration-Docker.md
         - Use:
             - Pantheon APIs:
-              - Access Pantheon APIs: Pantheon-API/Pantheon-API.md
-              - Use JSON-RPC API over HTTP or WebSockets: Pantheon-API/Using-JSON-RPC-API.md
-              - Use RPC Pub/Sub API over WebSockets: Pantheon-API/RPC-PubSub.md
-              - Use GraphQL over HTTP: Pantheon-API/GraphQL.md
-              - Authenticate JSON-RPC Requests: Pantheon-API/Authentication.md
+              - Access Pantheon APIs: HowTo/Use/Pantheon-APIs/Pantheon-API.md
+              - Use JSON-RPC API over HTTP or WebSockets: HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md
+              - Use RPC Pub/Sub API over WebSockets: HowTo/Use/Pantheon-APIs/RPC-PubSub.md
+              - Use GraphQL over HTTP: HowTo/Use/Pantheon-APIs/GraphQL.md
+              - Authenticate JSON-RPC Requests: HowTo/Use/Pantheon-APIs/Authentication.md
             - Consensus Protocols:
-              - Use Clique: Consensus-Protocols/Clique.md
-              - Use IBFT 2.0: Consensus-Protocols/IBFT.md
-              - Connect to Quorum IBFT 1.0 Network: Consensus-Protocols/QuorumIBFT.md
+              - Use Clique: HowTo/Use/Consensus-Protocols/Clique.md
+              - Use IBFT 2.0: HowTo/Use/Consensus-Protocols/IBFT.md
+              - Connect to Quorum IBFT 1.0 Network: HowTo/Use/Consensus-Protocols/QuorumIBFT.md
             - Privacy API Methods:
-              - Use EEA-compliant Privacy: Privacy/How-To/EEA-Compliant.md
-              - Use Pantheon-extended Privacy: Privacy/How-To/Pantheon-Privacy.md
-              - Create and Manage Privacy Groups: Privacy/How-To/Create-Manage-Privacy-Groups.md
-              - Access Private and Privacy Marker Transactions: Privacy/How-To/Access-Private-Transactions.md
+              - Use EEA-compliant Privacy: How-To/Use/Privacy-API-Methods/EEA-Compliant.md
+              - Use Pantheon-extended Privacy: How-To/Use/Privacy-API-Methods/Pantheon-Privacy.md
+              - Create and Manage Privacy Groups: How-To/Use/Privacy-API-Methods/Create-Manage-Privacy-Groups.md
+              - Access Private and Privacy Marker Transactions: How-To/Use/Privacy-API-Methods/Access-Private-Transactions.md
             - Permissioning:
-              - Use Local Permissioning: Permissions/Local-Permissioning.md
-              - Update Onchain Permissioning Whitelists: Permissions/Onchain-Permissioning/Updating-Whitelists.md
+              - Use Local Permissioning: HowTo/Use/Permissioning/Local-Permissioning.md
+              - Update Onchain Permissioning Whitelists: HowTo/Use/Permissioning/Updating-Whitelists.md
             - Client Libraries:
-              - Use the web3.js-eea Client Library: Privacy/How-To/eeajs.md
+              - Use the web3.js-eea Client Library: HowTo/Use/Client-Libraries/eeajs.md
             - Filters:
-              - Access Logs Using JSON-RPC API: Using-Pantheon/Accessing-Logs-Using-JSON-RPC.md
+              - Access Logs Using JSON-RPC API: HowTo/Use/Filters/Accessing-Logs-Using-JSON-RPC.md
         - Configure Pantheon:
-           - Specify Options in a Configuration File: Configuring-Pantheon/Using-Configuration-File.md
-           - Configure a Free Gas Network: Configuring-Pantheon/FreeGas.md
-           - Predeploy a Contract in the Genesis File: Configuring-Pantheon/Contracts-in-Genesis.md
+           - Specify Options in a Configuration File: HowTo/Configure-Pantheon/Using-Configuration-File.md
+           - Configure a Free Gas Network: HowTo/Configure-Pantheon/FreeGas.md
+           - Predeploy a Contract in the Genesis File: HowTo/Configure-Pantheon/Contracts-in-Genesis.md
+           - Pass JVM Options: HowTo/Configure-Pantheon/Passing-JVM-Options.md
         - Send Transactions:
-           - Use Wallets for Key Management: Using-Pantheon/Account-Management.md
-           - Create and Send Transactions: Using-Pantheon/Transactions/Transactions.md
-           - Create and Send Private Transactions: Privacy/How-To/Creating-Sending-Private-Transactions.md
-           - Include Revert Reason in Transaction Receipts: Using-Pantheon/Transactions/Revert-Reason.md
+           - Use Wallets for Key Management: HowTo/Send-Transactions/Account-Management.md
+           - Create and Send Transactions: HowTo/Send-Transactions/Transactions.md
+           - Create and Send Private Transactions: How-To/Send-Transactions/Creating-Sending-Private-Transactions.md
+           - Include Revert Reason in Transaction Receipts: HowTo/Send-Transactions/Revert-Reason.md
         - Deploy for Production:
-          - Use Ansible to Deploy Pantheon: Deploying-Pantheon/Ansible.md
-          - Use Prometheus for Monitoring: Monitoring/Monitoring-Performance.md
-          - Use Alethio Lite Explorer: Monitoring/Alethio/Lite-Block-Explorer.md
-          - Use Alethio EthStats Lite Network Monitor: Monitoring/Alethio/Lite-Network-Monitor.md
-          - Configure High Availability of APIs: Deploying-Pantheon/High-Availability.md
-          - Deploy Permissioning Management Dapp: Permissions/Onchain-Permissioning/Production.md
+          - Use Ansible to Deploy Pantheon: HowTo/Deploy/Ansible.md
+          - Use Prometheus for Monitoring: HowTo/Deploy/Monitoring-Performance.md
+          - Use Alethio Lite Explorer: HowTo/Deploy/Lite-Block-Explorer.md
+          - Use Alethio EthStats Lite Network Monitor: HowTo/Deploy/Alethio/Lite-Network-Monitor.md
+          - Configure High Availability of APIs: HowTo/Deploy/High-Availability.md
+          - Deploy Permissioning Management Dapp: HowTo/Deploy/Production.md
         - Find and Connect to Peers:
-          - Start a Bootnode: Configuring-Pantheon/Networking/Bootnodes.md
-          - Configure Ports for Access: Configuring-Pantheon/Networking/Configuring-Ports.md
-          - Manage Peers: Configuring-Pantheon/Networking/Managing-Peers.md
-          - Use UPnP: Configuring-Pantheon/Networking/Using-UPnP.md
+          - Start a Bootnode: HowTo/Find-and-Connect/Bootnodes.md
+          - Configure Ports for Access: HowTo/Find-and-Connect/Configuring-Ports.md
+          - Manage Peers: HowTo/Find-and-Connect/Managing-Peers.md
+          - Use UPnP: HowTo/Find-and-Connect/Using-UPnP.md
         - Develop on Pantheon:
-          - Pass JVM Options: Configuring-Pantheon/Passing-JVM-Options.md
-          - Use Truffle with Pantheon: Using-Pantheon/Truffle.md
+          - Use Truffle with Pantheon: HowTo/Develop-on-Pantheon/Truffle.md
         - Mine:
-          - Configure Mining: Using-Pantheon/Mining.md
+          - Configure Mining: HowTo/Mine/Mining.md
         - Troubleshoot:
-          - Configure Logging: Monitoring/Logging.md
-          - Solve Common Problems: Troubleshooting/Troubleshooting.md
+          - Configure Logging: HowTo/Troubleshoot/Logging.md
+          - Solve Common Problems: HowTo/Troubleshoot/Troubleshooting.md
     - Explanation:
-        - Architecture: Architecture/Overview.md
+        - Architecture: Explanation/ArchitectureOverview.md
         - Consensus Protocols:
-          - Overview: Consensus-Protocols/Overview-Consensus.md
-          - Comparing PoA Consensus Protocols: Consensus-Protocols/Comparing-PoA.md
+          - Overview: Explanation/Consensus-Protocols/Overview-Consensus.md
+          - Comparing PoA Consensus Protocols: Explanation/Consensus-Protocols/Comparing-PoA.md
         - Privacy:
-          - Overview: Privacy/Explanation/Privacy-Overview.md
-          - Privacy Groups: Privacy/Explanation/Privacy-Groups.md
-          - Processing Private Transactions: Privacy/Explanation/Private-Transaction-Processing.md
+          - Overview: Explanation/Privacy/Privacy-Overview.md
+          - Privacy Groups: Explanation/Privacy/Privacy-Groups.md
+          - Processing Private Transactions: Explanation/Privacy/Private-Transaction-Processing.md
         - Permissioning:
-          - Overview: Permissions/Permissioning-Overview.md
-          - Onchain Permissioning: Permissions/Onchain-Permissioning/Onchain-Permissioning.md
+          - Overview: Explanation/Permissioning/Permissioning-Overview.md
+          - Onchain Permissioning: Explanation/Permissioning/Onchain-Permissioning/Onchain-Permissioning.md
         - Transactions:
-          - Transaction Pool: Using-Pantheon/Transactions/Transaction-Pool.md
-          - Vadidating Transactions: Using-Pantheon/Transactions/Transaction-Validation.md
-        - Events and Logs: Using-Pantheon/Events-and-Logs.md
-        - Network vs Node Configuration: Configuring-Pantheon/Network-vs-Node.md
-        - Network ID and Chain ID: Configuring-Pantheon/NetworkID-And-ChainID.md
-        - Node Keys: Configuring-Pantheon/Node-Keys.md
-        - Alethio: Monitoring/Alethio/Overview.md
+          - Transaction Pool: Explanation/Transactions/Transaction-Pool.md
+          - Vadidating Transactions: Explanation/Transactions/Transaction-Validation.md
+        - Events and Logs: Explanation/Events-and-Logs.md
+        - Network vs Node Configuration: Explanation/Network-vs-Node.md
+        - Network ID and Chain ID: Explanation/NetworkID-And-ChainID.md
+        - Node Keys: Explanation/Node-Keys.md
+        - Alethio: Explanation/AlethioOverview.md
     - Reference:
-        - System Requirements: Installation/System-Requirements.md
+        - System Requirements: Reference/System-Requirements.md
         - Pantheon Command Line:
-          - Options: Reference/Pantheon-CLI-Syntax.md
-          - Subcommands: Reference/Pantheon-CLI-Subcommands.md
+          - Options: Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md
+          - Subcommands: Reference/Pantheon-CLI/Pantheon-CLI-Subcommands.md
         - Pantheon API Methods: Reference/Pantheon-API-Methods.md
         - Pantheon API Objects: Reference/Pantheon-API-Objects.md
-        - Configuration Items in Genesis File: Configuring-Pantheon/Config-Items.md
+        - Configuration Items in Genesis File: Reference/Config-Items.md
         - web3.js-eaa Methods: Reference/web3js-eea-Methods.md
-        - Accounts for Testing: Configuring-Pantheon/Accounts-for-Testing.md
-        - Security Disclosure Policy: Security/Responsible-Disclosure.md
-        - Blog Posts and Webinars: Resources/Resources.md
+        - Accounts for Testing: Reference/Accounts-for-Testing.md
+        - Security Disclosure Policy: Reference/Responsible-Disclosure.md
+        - Blog Posts and Webinars: Reference/Resources.md
 
 markdown_extensions:
     - toc:

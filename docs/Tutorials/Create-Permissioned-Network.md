@@ -4,7 +4,7 @@ description: Pantheon Create a Permissioned network
 # Creating a Permissioned Network
 
 The following steps set up a permissioned network with node and account permissions. The network uses the 
-[Clique Proof of Authority consensus protocol](../Consensus-Protocols/Clique.md). 
+[Clique Proof of Authority consensus protocol](../HowTo/Use/Consensus-Protocols/Clique.md). 
 
 !!!important 
     A permissioned Ethereum network as described here is not protected against all attack vectors.
@@ -12,7 +12,7 @@ The following steps set up a permissioned network with node and account permissi
 
 ## Prerequisites 
 
-[Pantheon](../Installation/Install-Binaries.md) 
+[Pantheon](../HowTo/Get-Started/Install-Binaries.md) 
 
 [Curl (or similar web service client)](https://curl.haxx.se/download.html) 
 
@@ -22,7 +22,7 @@ The steps to create a permissoned network are displayed on the right.
 
 ### 1. Create Folders 
 
-Each node requires a data directory for the blockchain data. When the node is started, the [node key](../Configuring-Pantheon/Node-Keys.md)
+Each node requires a data directory for the blockchain data. When the node is started, the [node key](../Explanation/Node-Keys.md)
 is saved in this directory. 
 
 Create directories for your permissioned network, each of the three nodes, and a data directory for each node: 
@@ -42,7 +42,7 @@ Permissioned-Network/
 In networks using Clique, the address of at least one initial signer must be included in the genesis file. 
 For this network, we will use Node-1 as the initial signer. This requires obtaining the address for Node-1. 
 
-To obtain the address for Node-1, in the `Node-1` directory, use the [`public-key export-address`](../Reference/Pantheon-CLI-Syntax.md#public-key)
+To obtain the address for Node-1, in the `Node-1` directory, use the [`public-key export-address`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#public-key)
 subcommand to write the node address to the specified file (`nodeAddress1` in this example)
 
 ```bash tab="MacOS"
@@ -56,7 +56,7 @@ pantheon --data-path=data public-key export-address --to=data\nodeAddress1
 ### 3. Create Genesis File 
 
 The genesis file defines the genesis block of the blockchain (that is, the start of the blockchain).
-The [Clique genesis file](../Consensus-Protocols/Clique.md#genesis-file) includes the address of Node-1 as the initial signer in the `extraData` field.    
+The [Clique genesis file](../HowTo/Use/Consensus-Protocols/Clique.md#genesis-file) includes the address of Node-1 as the initial signer in the `extraData` field.    
 
 All nodes in a network must use the same genesis file. 
 
@@ -138,7 +138,7 @@ The permissions configuration file includes the first two accounts from the gene
 Permissioned nodes are added using the JSON-RPC API after starting the nodes. 
 
 !!! note
-    Permissions are specified at the node level. The [`permissions_config.toml`](../Permissions/Local-Permissioning.md#permissions-configuration-file) 
+    Permissions are specified at the node level. The [`permissions_config.toml`](../HowTo/Use/Permissioning/Local-Permissioning.md#permissions-configuration-file) 
     file must be saved in the data directory for each node. 
     
     On-chain permissioning is under development. On-chain permissioning will use one on-chain 
@@ -158,14 +158,14 @@ pantheon --data-path=data --genesis-file=..\cliqueGenesis.json --permissions-nod
 
 The command line specifies: 
 
-* Nodes and accounts permissions are enabled using the [`--permissions-nodes-config-file-enabled`](../Reference/Pantheon-CLI-Syntax.md#permissions-nodes-config-file-enabled)
-and [`--permissions-accounts-config-file-enabled`](../Reference/Pantheon-CLI-Syntax.md#permissions-accounts-config-file-enabled) options
-* JSON-RPC API is enabled using the [`--rpc-http-enabled`](../Reference/Pantheon-CLI-Syntax.md#rpc-http-enabled) option
-* ADMIN,ETH,NET,PERM, and CLIQUE APIs are enabled using the [`--rpc-http-api`](../Reference/Pantheon-CLI-Syntax.md#rpc-http-api) option
-* All hosts can access the HTTP JSON-RPC API using the [`--host-whitelist`](../Reference/Pantheon-CLI-Syntax.md#host-whitelist) option 
-* All domains can access the node using the HTTP JSON-RPC API using the [`--rpc-http-cors-origins`](../Reference/Pantheon-CLI-Syntax.md#rpc-http-cors-origins) option. 
+* Nodes and accounts permissions are enabled using the [`--permissions-nodes-config-file-enabled`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#permissions-nodes-config-file-enabled)
+and [`--permissions-accounts-config-file-enabled`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#permissions-accounts-config-file-enabled) options
+* JSON-RPC API is enabled using the [`--rpc-http-enabled`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#rpc-http-enabled) option
+* ADMIN,ETH,NET,PERM, and CLIQUE APIs are enabled using the [`--rpc-http-api`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#rpc-http-api) option
+* All hosts can access the HTTP JSON-RPC API using the [`--host-whitelist`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#host-whitelist) option 
+* All domains can access the node using the HTTP JSON-RPC API using the [`--rpc-http-cors-origins`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#rpc-http-cors-origins) option. 
 
-When the node starts, the [enode URL](../Configuring-Pantheon/Node-Keys.md#enode-url) is displayed.
+When the node starts, the [enode URL](../Explanation/Node-Keys.md#enode-url) is displayed.
 The enode URL is required specify Node-1 as a peer and update the permissions configuration file in 
 the following steps. 
 
@@ -185,12 +185,12 @@ pantheon --data-path=data --genesis-file=..\cliqueGenesis.json --permissions-nod
 
 The command line specifies:
  
-* Different port to Node-1 for P2P peer discovery using the [`--p2p-port`](../Reference/Pantheon-CLI-Syntax.md#p2p-port) option
-* Different port to Node-1 for HTTP JSON-RPC using the [`--rpc-http-port`](../Reference/Pantheon-CLI-Syntax.md#rpc-http-port) option
-* Data directory for Node-2 using the [`--data-path`](../Reference/Pantheon-CLI-Syntax.md#data-path) option
+* Different port to Node-1 for P2P peer discovery using the [`--p2p-port`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#p2p-port) option
+* Different port to Node-1 for HTTP JSON-RPC using the [`--rpc-http-port`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#rpc-http-port) option
+* Data directory for Node-2 using the [`--data-path`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#data-path) option
 * Other options as for as for Node-1.  
 
-When the node starts, the [enode URL](../Configuring-Pantheon/Node-Keys.md#enode-url) is displayed.
+When the node starts, the [enode URL](../Explanation/Node-Keys.md#enode-url) is displayed.
 The enode URL is required to update the permissions configuration file in the following steps. 
 
 ### 7. Start Node-3
@@ -207,12 +207,12 @@ pantheon --data-path=data --genesis-file=..\cliqueGenesis.json --permissions-nod
 
 The command line specifies:
  
-* Different port to Node-1 and Node-2 for P2P peer discovery using the [`--p2p-port`](../Reference/Pantheon-CLI-Syntax.md#p2p-port) option
-* Different port to Node-1 and Node-2 for HTTP JSON-RPC using the [`--rpc-http-port`](../Reference/Pantheon-CLI-Syntax.md#rpc-http-port) option
-* Data directory for Node-3 using the [`--data-path`](../Reference/Pantheon-CLI-Syntax.md#data-path) option
+* Different port to Node-1 and Node-2 for P2P peer discovery using the [`--p2p-port`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#p2p-port) option
+* Different port to Node-1 and Node-2 for HTTP JSON-RPC using the [`--rpc-http-port`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#rpc-http-port) option
+* Data directory for Node-3 using the [`--data-path`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#data-path) option
 * Other options as for as for Node-1.  
 
-When the node starts, the [enode URL](../Configuring-Pantheon/Node-Keys.md#enode-url) is displayed.
+When the node starts, the [enode URL](../Explanation/Node-Keys.md#enode-url) is displayed.
 The enode URL is required to update the permissions configuration file in the following steps. 
 
 ### 8. Add Enode URLs for Nodes to Permissions Configuration File 
@@ -296,7 +296,7 @@ Import the first account from the genesis file into MetaMask and send transactio
     * Initial balance : `0xad78ebc5ac6200000` (200000000000000000000 in decimal)   
 
 !!! info 
-    Pantheon does not implement [private key management](../Using-Pantheon/Account-Management.md).
+    Pantheon does not implement [private key management](../HowTo/Send-Transactions/Account-Management.md).
 
 ### Try Sending a Transaction from an Account Not in the Accounts Whitelist 
 

@@ -89,10 +89,10 @@ Followed by a list of the endpoints:
 - Use the **JSON-RPC HTTP service endpoint** to access the RPC node service from your Dapp or from cryptocurrency
 wallets such as Metamask.
 - Use the **JSON-RPC WebSocket service endpoint** to access the web socket node service from your Dapp.
-- Use the **GraphQL HTTP service endpoint** to access the [HTTP GraphQL](../Pantheon-API/GraphQL.md) node service from your Dapp.
+- Use the **GraphQL HTTP service endpoint** to access the [HTTP GraphQL](../HowTo/Use/Pantheon-APIs/GraphQL.md) node service from your Dapp.
 - Use the **Web block explorer address** to display the block explorer web application. View the block explorer by
 entering the URL in your web browser.
-- Use the **Prometheus address** to access the [Prometheus dashboard](../Monitoring/Monitoring-Performance.md).
+- Use the **Prometheus address** to access the [Prometheus dashboard](../HowTo/Deploy/Monitoring-Performance.md).
 - Use the **Grafana address** to access the [Grafana dashboard](https://grafana.com/dashboards/10273).
 
 To display the list of endpoints again, run:
@@ -112,19 +112,19 @@ to your browser.
 
 The block explorer displays a summary of the private network:
 
-![Block Explorer](../Getting-Started/ExplorerSummary.png)
+![Block Explorer](../images/ExplorerSummary.png)
 
 Notice that the explorer indicates 6 peers: the 4 regular nodes, the mining node and the bootnode.
 
 Click the block number to the right of **Best Block** to display the block details:
 
-![Block Details](../Getting-Started/ExplorerBlockDetails.png)
+![Block Details](../images/ExplorerBlockDetails.png)
 
 You can explore blocks by clicking on the blocks under **Bk** on the left-hand side.
 
 You can search for a specific block, transaction hash, or address by clicking the magnifying glass in the top left-hand corner.
 
-![Explorer Search](../Getting-Started/ExplorerSearch.png)
+![Explorer Search](../images/ExplorerSearch.png)
 
 
 ## Monitoring nodes with Prometheus and Grafana
@@ -134,7 +134,7 @@ health and usage. You can directly access these tools from your browser at the a
 in the endpoint list.
 
 For more details on how to configure and use these tools for your own nodes, refer to our 
-[performances monitoring documentation](../Monitoring/Monitoring-Performance.md), 
+[performances monitoring documentation](../HowTo/Deploy/Monitoring-Performance.md), 
 as well as [Prometheus documentation](https://prometheus.io/docs/introduction/overview/)
 and [Grafana documentation](https://grafana.com/docs/).
 
@@ -254,7 +254,7 @@ of this private test network.
 {!global/test_accounts.md!}
 
 !!!note
-    Pantheon doesn't implement [account management](../Using-Pantheon/Account-Management.md). To create your own account, 
+    Pantheon doesn't implement [account management](../HowTo/Send-Transactions/Account-Management.md). To create your own account, 
     you have to use a third-party tool such as MetaMask.
 
 After you sign in to MetaMask, connect to the private network RPC endpoint:

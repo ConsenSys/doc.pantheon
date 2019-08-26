@@ -11,7 +11,7 @@ You can test multi-block and multi-user scenarios on a private network before mo
 
 ## Prerequisites 
 
-[Pantheon](../Installation/Install-Binaries.md) 
+[Pantheon](../HowTo/Get-Started/Install-Binaries.md) 
 
 [Curl (or similar web service client)](https://curl.haxx.se/download.html) 
 
@@ -41,7 +41,7 @@ The genesis file defines the genesis block of the blockchain (that is, the start
 The genesis file includes entries for configuring the blockchain such as the mining difficulty and initial 
 accounts and balances.    
 
-All nodes in a network must use the same genesis file. The [network ID](../Configuring-Pantheon/NetworkID-And-ChainID.md) 
+All nodes in a network must use the same genesis file. The [network ID](../Explanation/NetworkID-And-ChainID.md) 
 defaults to the `chainID` in the genesis file. The `fixeddifficulty` enables blocks to be mined quickly.   
 
 Copy the following genesis definition to a file called `privateNetworkGenesis.json` and save it in the `Private-Network` directory: 
@@ -91,17 +91,17 @@ pantheon --data-path=data --genesis-file=..\privateNetworkGenesis.json --bootnod
 
 The command line specifies: 
 
-* No arguments for the [`--bootnodes`](../Reference/Pantheon-CLI-Syntax.md#bootnodes) option because this is your bootnode.
-* Mining is enabled and the account to which mining rewards are paid using the [`--miner-enabled`](../Reference/Pantheon-CLI-Syntax.md#miner-enabled) 
-and [`--miner-coinbase`](../Reference/Pantheon-CLI-Syntax.md#miner-coinbase) options.
-* JSON-RPC API is enabled using the [`--rpc-http-enabled`](../Reference/Pantheon-CLI-Syntax.md#rpc-http-enabled) option.
-* All hosts can access the HTTP JSON-RPC API using the [`--host-whitelist`](../Reference/Pantheon-CLI-Syntax.md#host-whitelist) option.
-* All domains can access the node using the HTTP JSON-RPC API using the [`--rpc-http-cors-origins`](../Reference/Pantheon-CLI-Syntax.md#rpc-http-cors-origins) option.  
+* No arguments for the [`--bootnodes`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#bootnodes) option because this is your bootnode.
+* Mining is enabled and the account to which mining rewards are paid using the [`--miner-enabled`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#miner-enabled) 
+and [`--miner-coinbase`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#miner-coinbase) options.
+* JSON-RPC API is enabled using the [`--rpc-http-enabled`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#rpc-http-enabled) option.
+* All hosts can access the HTTP JSON-RPC API using the [`--host-whitelist`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#host-whitelist) option.
+* All domains can access the node using the HTTP JSON-RPC API using the [`--rpc-http-cors-origins`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#rpc-http-cors-origins) option.  
 
 !!! info
     The miner coinbase account is one of the accounts defined in the genesis file. 
 
-When the node starts, the [enode URL](../Configuring-Pantheon/Node-Keys.md#enode-url) is displayed.
+When the node starts, the [enode URL](../Explanation/Node-Keys.md#enode-url) is displayed.
 Copy the enode URL to specify Node-1 as the bootnode in the following steps. 
 
 ![Node 1 Enode URL](../images/EnodeStartup.png)
@@ -120,9 +120,9 @@ pantheon --data-path=data --genesis-file=..\privateNetworkGenesis.json --bootnod
 
 The command line specifies: 
 
-* Different port to Node-1 for P2P peer discovery using the [`--p2p-port`](../Reference/Pantheon-CLI-Syntax.md#p2p-port) option.
-* Enode URL for Node-1 using the [`--bootnodes`](../Reference/Pantheon-CLI-Syntax.md#bootnodes) option.
-* Data directory for Node-2 using the [`--data-path`](../Reference/Pantheon-CLI-Syntax.md#data-path) option.
+* Different port to Node-1 for P2P peer discovery using the [`--p2p-port`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#p2p-port) option.
+* Enode URL for Node-1 using the [`--bootnodes`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#bootnodes) option.
+* Data directory for Node-2 using the [`--data-path`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#data-path) option.
 * Genesis file as for Node-1.  
 
 ### 5. Start Node-3
@@ -140,7 +140,7 @@ pantheon --data-path=data --genesis-file=..\privateNetworkGenesis.json --bootnod
 The command line specifies: 
 
  * Different port to Node-1 and Node-2 for P2P peer discovery.
- * Data directory for Node-3 using the [`--data-path`](../Reference/Pantheon-CLI-Syntax.md#data-path) option.
+ * Data directory for Node-3 using the [`--data-path`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#data-path) option.
  * Bootnode and genesis file as for Node-2. 
 
 ### 6. Confirm Private Network is Working 
@@ -165,13 +165,13 @@ The result confirms Node-1 (the node running the JSON-RPC service) has two peers
 Import accounts to MetaMask and send transactions as described in the [Private Network Quickstart Tutorial](Private-Network-Quickstart.md#creating-a-transaction-using-metamask)
 
 !!! info 
-    Pantheon does not implement [private key management](../Using-Pantheon/Account-Management.md).
+    Pantheon does not implement [private key management](../HowTo/Send-Transactions/Account-Management.md).
     
-Send transactions using `eth_sendRawTransaction` to [send ether or, deploy or invoke contracts](../Using-Pantheon/Transactions/Transactions.md).
+Send transactions using `eth_sendRawTransaction` to [send ether or, deploy or invoke contracts](../HowTo/Send-Transactions/Transactions.md).
 
-Use the [JSON-RPC API](../Pantheon-API/Using-JSON-RPC-API.md). 
+Use the [JSON-RPC API](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md). 
 
-Start a node with the [`--rpc-ws-enabled`](../Reference/Pantheon-CLI-Syntax.md#rpc-ws-enabled) option and use the [RPC Pub/Sub API](../Pantheon-API/RPC-PubSub.md).       
+Start a node with the [`--rpc-ws-enabled`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#rpc-ws-enabled) option and use the [RPC Pub/Sub API](../HowTo/Use/Pantheon-APIs/RPC-PubSub.md).       
 
 ## Stop Nodes
 

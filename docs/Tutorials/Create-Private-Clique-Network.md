@@ -1,7 +1,7 @@
 # Creating a Private Network using Clique (Proof of Authority) Consensus Protocol
 
 A private network provides a configurable network for testing. This private network uses the [Clique (Proof of Authority)
-consensus protocol](../Consensus-Protocols/Clique.md). 
+consensus protocol](../HowTo/Use/Consensus-Protocols/Clique.md). 
 
 !!!important
     An Ethereum private network created as described here is isolated but not protected or secure. 
@@ -9,7 +9,7 @@ consensus protocol](../Consensus-Protocols/Clique.md).
 
 ## Prerequisites 
 
-[Pantheon](../Installation/Install-Binaries.md) 
+[Pantheon](../HowTo/Get-Started/Install-Binaries.md) 
 
 [Curl (or similar web service client)](https://curl.haxx.se/download.html) 
 
@@ -19,7 +19,7 @@ The steps to create a private network using Clique are displayed on the right.
 
 ### 1. Create Folders 
 
-Each node requires a data directory for the blockchain data. When the node is started, the [node key](../Configuring-Pantheon/Node-Keys.md) is saved in this directory. 
+Each node requires a data directory for the blockchain data. When the node is started, the [node key](../Explanation/Node-Keys.md) is saved in this directory. 
 
 Create directories for your private network, each of the three nodes, and a data directory for each node: 
 
@@ -38,7 +38,7 @@ Clique-Network/
 In Clique networks, the address of at least one initial signer must be included in the genesis file. 
 For this Clique network, we will use Node-1 as the initial signer. This requires obtaining the address for Node-1. 
 
-To obtain the address for Node-1, in the `Node-1` directory, use the [`public-key export-address`](../Reference/Pantheon-CLI-Subcommands.md#export-address)
+To obtain the address for Node-1, in the `Node-1` directory, use the [`public-key export-address`](../Reference/Pantheon-CLI/Pantheon-CLI-Subcommands.md#export-address)
 subcommand to write the node address to the specified file (`node1Address` in this example)
 
 ```bash tab="MacOS"
@@ -52,7 +52,7 @@ pantheon --data-path=data public-key export-address --to=data\node1Address
 ### 3. Create Genesis File 
 
 The genesis file defines the genesis block of the blockchain (that is, the start of the blockchain).
-The [Clique genesis file](../Consensus-Protocols/Clique.md#genesis-file) includes the address of Node-1 as the initial signer in the `extraData` field.    
+The [Clique genesis file](../HowTo/Use/Consensus-Protocols/Clique.md#genesis-file) includes the address of Node-1 as the initial signer in the `extraData` field.    
 
 All nodes in a network must use the same genesis file. 
 
@@ -130,13 +130,13 @@ pantheon --data-path=data --genesis-file=..\cliqueGenesis.json --bootnodes --net
 
 The command line specifies: 
 
-* No arguments for the [`--bootnodes`](../Reference/Pantheon-CLI-Syntax.md#bootnodes) option because this is your bootnode
-* JSON-RPC API is enabled using the [`--rpc-http-enabled`](../Reference/Pantheon-CLI-Syntax.md#rpc-http-enabled) option
-* ETH,NET, and CLIQUE APIs are enabled using the [`--rpc-http-api`](../Reference/Pantheon-CLI-Syntax.md#rpc-http-api) option
-* All hosts can access the HTTP JSON-RPC API using the [`--host-whitelist`](../Reference/Pantheon-CLI-Syntax.md#host-whitelist) option
-* All domains can access the node using the HTTP JSON-RPC API using the [`--rpc-http-cors-origins`](../Reference/Pantheon-CLI-Syntax.md#rpc-http-cors-origins) option 
+* No arguments for the [`--bootnodes`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#bootnodes) option because this is your bootnode
+* JSON-RPC API is enabled using the [`--rpc-http-enabled`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#rpc-http-enabled) option
+* ETH,NET, and CLIQUE APIs are enabled using the [`--rpc-http-api`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#rpc-http-api) option
+* All hosts can access the HTTP JSON-RPC API using the [`--host-whitelist`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#host-whitelist) option
+* All domains can access the node using the HTTP JSON-RPC API using the [`--rpc-http-cors-origins`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#rpc-http-cors-origins) option 
 
-When the node starts, the [enode URL](../Configuring-Pantheon/Node-Keys.md#enode-url) is displayed.
+When the node starts, the [enode URL](../Explanation/Node-Keys.md#enode-url) is displayed.
 Copy the enode URL to specify Node-1 as the bootnode in the following steps. 
 
 ![Node 1 Enode URL](../images/EnodeStartup.png)
@@ -155,10 +155,10 @@ pantheon --data-path=data --genesis-file=..\cliqueGenesis.json --bootnodes=<Node
 
 The command line specifies: 
 
-* Different port to Node-1 for P2P peer discovery using the [`--p2p-port`](../Reference/Pantheon-CLI-Syntax.md#p2p-port) option.
-* Different port to Node-1 for HTTP JSON-RPC using the [`--rpc-http-port`](../Reference/Pantheon-CLI-Syntax.md#rpc-http-port) option.
-* Enode URL for Node-1 using the [`--bootnodes`](../Reference/Pantheon-CLI-Syntax.md#bootnodes) option.
-* Data directory for Node-2 using the [`--data-path`](../Reference/Pantheon-CLI-Syntax.md#data-path) option.
+* Different port to Node-1 for P2P peer discovery using the [`--p2p-port`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#p2p-port) option.
+* Different port to Node-1 for HTTP JSON-RPC using the [`--rpc-http-port`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#rpc-http-port) option.
+* Enode URL for Node-1 using the [`--bootnodes`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#bootnodes) option.
+* Data directory for Node-2 using the [`--data-path`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#data-path) option.
 * Other options as for [Node-1](#5-start-first-node-as-bootnode).
 
 
@@ -176,9 +176,9 @@ pantheon --data-path=data --genesis-file=..\cliqueGenesis.json --bootnodes=<Node
 
 The command line specifies: 
 
- * Different port to Node-1 and Node-2 for P2P peer discovery using the [`--p2p-port`](../Reference/Pantheon-CLI-Syntax.md#p2p-port) option.
- * Different port to Node-1 and Node-2 for HTTP JSON-RPC using the [`--rpc-http-port`](../Reference/Pantheon-CLI-Syntax.md#rpc-http-port) option.
- * Data directory for Node-3 using the [`--data-path`](../Reference/Pantheon-CLI-Syntax.md#data-path) option.
+ * Different port to Node-1 and Node-2 for P2P peer discovery using the [`--p2p-port`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#p2p-port) option.
+ * Different port to Node-1 and Node-2 for HTTP JSON-RPC using the [`--rpc-http-port`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#rpc-http-port) option.
+ * Data directory for Node-3 using the [`--data-path`](../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#data-path) option.
  * Bootnode as for [Node-2](#6-start-node-2).
  * Other options as for [Node-1](#5-start-first-node-as-bootnode). 
 
@@ -203,7 +203,7 @@ The result confirms Node-1 has two peers (Node-2 and Node-3):
 
 Look at the logs displayed to confirm Node-1 is producing blocks and Node-2 and Node-3 are importing blocks. 
 
-Use the [Clique API to add](../Consensus-Protocols/Clique.md#adding-and-removing-signers) Node-2 or Node-3 as a signer. 
+Use the [Clique API to add](../HowTo/Use/Consensus-Protocols/Clique.md#adding-and-removing-signers) Node-2 or Node-3 as a signer. 
 
 !!! note
     To add Node-2 or Node-3 as a signer you need the [node address as when specifying Node-1](#2-get-address-for-node-1) as the initial signer. 
@@ -211,7 +211,7 @@ Use the [Clique API to add](../Consensus-Protocols/Clique.md#adding-and-removing
 Import accounts to MetaMask and send transactions as described in the [Private Network Quickstart Tutorial](Private-Network-Quickstart.md#creating-a-transaction-using-metamask)
 
 !!! info 
-    Pantheon does not implement [private key management](../Using-Pantheon/Account-Management.md).
+    Pantheon does not implement [private key management](../HowTo/Send-Transactions/Account-Management.md).
 
 ## Stop Nodes
 
