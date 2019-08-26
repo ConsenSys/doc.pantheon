@@ -18,7 +18,7 @@ Create a filter using [`eth_newFilter`](../../../Reference/Pantheon-API-Methods.
 
 !!! example
     
-    If the [example contract](Events-and-Logs.md#example) was deployed to 0x42699a7612a82f1d9c36148af9c77354759b210b, the 
+    If the [example contract](../../../Explanation/Events-and-Logs.md#example) was deployed to 0x42699a7612a82f1d9c36148af9c77354759b210b, the 
     following request for `eth_newFilter` creates a filter to log when `valueIndexed` is set to 5: 
     
     ```json
@@ -50,8 +50,8 @@ with the filter ID hash returned by [`eth_newFilter`](../../../Reference/Pantheo
 !!! example 
     
     If the contract had been executed twice since the last poll, with `valueIndexed` set to 1 and 5, 
-    [`eth_getFilterChanges`](../Reference/Pantheon-API-Methods.md#eth_getfilterchanges) returns
-    only the log where the [topic](Events-and-Logs.md#event-parameters) for `valueIndexed` is 5: 
+    [`eth_getFilterChanges`](../../../Reference/Pantheon-API-Methods.md#eth_getfilterchanges) returns
+    only the log where the [topic](../../../Explanation/Events-and-Logs.md#event-parameters) for `valueIndexed` is 5: 
     
     ```json
     {

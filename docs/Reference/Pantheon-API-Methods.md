@@ -6,7 +6,7 @@ description: Pantheon JSON-RPC API methods reference
 !!! attention
     All JSON-RPC HTTP examples use the default host and port endpoint `http://127.0.0.1:8545`. 
 
-    If using the [--rpc-http-host](../Reference/Pantheon-CLI-Syntax.md#rpc-http-host) or [--rpc-http-port](../Reference/Pantheon-CLI-Syntax.md#rpc-http-port)
+    If using the [--rpc-http-host](Pantheon-CLI/Pantheon-CLI-Syntax.md#rpc-http-host) or [--rpc-http-port](Pantheon-CLI/Pantheon-CLI-Syntax.md#rpc-http-port)
     options, update the endpoint.  
 
 {!global/Postman.md!}

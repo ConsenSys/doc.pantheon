@@ -46,7 +46,7 @@ now `/opt/pantheon/key`.
     data path path interferes with the operation of Pantheon and prevents Pantheon from safely launching. 
     
     To run a node that maintains the node state (key and database), [`--data-path` must be set to a location
-    other than `/opt/pantheon` and a storage volume mounted at that location](../Getting-Started/Run-Docker-Image.md#starting-pantheon). 
+    other than `/opt/pantheon` and a storage volume mounted at that location](Run-Docker-Image.md#starting-pantheon). 
 
 The host and port options continue to default to the previously set values. 
 
