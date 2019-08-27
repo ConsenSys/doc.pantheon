@@ -10,6 +10,13 @@ The Pantheon nodes maintain the public world state for the blockchain and a priv
 The private states contain data that is not shared in the globally replicated world state. Private transactions read 
 and write to the private world state for the privacy group, and read from the public world state.
 
+Contracts have the following levels of access between public and private states:
+
+* A contract from a privacy group can read and write to another contract in the same privacy group.
+* A contract from a privacy group can read from the public state including public contracts.
+* A contract from a privacy group cannot access contracts from a different privacy group.
+* A public contract cannot access a private contract.
+
 ## Privacy Types 
 
 Pantheon implements two types of privacy: 
