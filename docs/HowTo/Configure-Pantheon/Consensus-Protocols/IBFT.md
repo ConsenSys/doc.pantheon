@@ -10,7 +10,9 @@ description: Pantheon IBFT 2.0 Proof-of-Authority (PoA) consensus protocol imple
 Pantheon implements the IBFT 2.0 Proof-of-Authority (PoA) consensus protocol. IBFT 2.0 can be used for private networks. 
 
 In IBFT 2.0 networks, transactions and blocks are validated by approved accounts, known as validators. 
-Validators take turns to create the next block. Existing validators propose and vote to add or remove validators. 
+Validators take turns to create the next block, and a super-majority (greater than 66%) of validators must sign the block before it can be inserted into the chain.
+
+Existing validators propose and vote to [add or remove validators](#adding-and-removing-validators). A majority vote (greater than 50%) is required to add or remove a validator. 
 
 ## Minimum Number of Validators 
 
