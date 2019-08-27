@@ -25,7 +25,7 @@ the node attempts to reconnect every 60 seconds.
 
 To configure a network of static nodes: 
 
-1. List [enode URLs](../../Explanation/Node-Keys.md#enode-url) of the nodes in the [`static-nodes.json` file](#static-nodesjson-file).
+1. List [enode URLs](../../Concepts/Node-Keys.md#enode-url) of the nodes in the [`static-nodes.json` file](#static-nodesjson-file).
 
 1. Save the `static-nodes.json` file in the data directory of each node. 
 
@@ -39,17 +39,17 @@ and [`admin_removePeer`](../../Reference/Pantheon-API-Methods.md#admin_removepee
     is not updated by `admin_addPeer` and `admin_removePeer` methods. 
     
     Nodes outside of the static nodes are not prevented from connecting.  To prevent nodes from connecting,
-    use [Permissioning](../../Explanation/Permissioning/Permissioning-Overview.md). 
+    use [Permissioning](../../Concepts/Permissioning/Permissioning-Overview.md). 
     
 !!! caution 
     If the added peer does not appear in the peer list (returned by [`admin_peers`](../../Reference/Pantheon-API-Methods.md#admin_peers)),
-    check the supplied [enode URL](../../Explanation/Node-Keys.md#enode-url) is correct, the node is running, the node is listening for 
+    check the supplied [enode URL](../../Concepts/Node-Keys.md#enode-url) is correct, the node is running, the node is listening for 
     TCP connections on the endpoint, and has not reached the [maximum number of peers](#limiting-peers).
     
 ### static-nodes.json File
 
 The `static-nodes.json` file must be located in the data directory (specified by [`--data-path`](../../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#data-path))
-and contain a JSON array of [enode URLs](../../Explanation/Node-Keys.md#enode-url).
+and contain a JSON array of [enode URLs](../../Concepts/Node-Keys.md#enode-url).
 
 !!! example 
     ```json

@@ -67,7 +67,7 @@ gas limit for transactions in Truffle to the maximum possible.
 
 !!! important
     Pantheon does not implement private key management. To use Pantheon with Truffle, you must configure 
-    a [Truffle wallet](../Develop-on-Pantheon/Truffle.md).
+    a [Truffle wallet](../Develop-Dapps/Truffle.md).
 
 
 ### Update truffle-config.js

@@ -8,7 +8,7 @@ Nodes can connect to the Ethereum mainnet, public testnets such as Ropsten, or p
 
 ## Prerequisites
 
-[Pantheon Installed](../../Installation/Overview.md)
+[Pantheon Installed](Install-Binaries.md)
 
 ## Local Block Data
 

@@ -22,11 +22,11 @@ description: Pantheon JSON-RPC API methods reference
 Adds a [static node](../HowTo/Find-and-Connect/Managing-Peers.md#static-nodes).  
 
 !!! caution 
-    If connections are timing out, ensure the node ID in the [enode URL](../Explanation/Node-Keys.md#enode-url) is correct. 
+    If connections are timing out, ensure the node ID in the [enode URL](../Concepts/Node-Keys.md#enode-url) is correct. 
 
 **Parameters**
 
-`string` : [Enode URL](../Explanation/Node-Keys.md#enode-url) of peer to add
+`string` : [Enode URL](../Concepts/Node-Keys.md#enode-url) of peer to add
 
 **Returns**
 
@@ -93,10 +93,10 @@ None
 
 Properties of the node object are:
 
-* `enode` - [Enode URL](../Explanation/Node-Keys.md#enode-url) for the node  
+* `enode` - [Enode URL](../Concepts/Node-Keys.md#enode-url) for the node  
 * `listenAddr` - Host and port for the node
 * `name` - Client name
-* `id` - [Node public key](../Explanation/Node-Keys.md#node-public-key)
+* `id` - [Node public key](../Concepts/Node-Keys.md#node-public-key)
 * `ports` - Peer discovery and listening [ports](../HowTo/Find-and-Connect/Managing-Peers.md#port-configuration) 
 * `protocols` - List of objects containing information for each Ethereum sub-protocol 
 
@@ -218,7 +218,7 @@ Removes a [static node](../HowTo/Find-and-Connect/Managing-Peers.md#static-nodes
 
 **Parameters**
 
-`string` : [Enode URL](../Explanation/Node-Keys.md#enode-url) of peer to remove
+`string` : [Enode URL](../Concepts/Node-Keys.md#enode-url) of peer to remove
 
 **Returns**
 
@@ -406,7 +406,7 @@ None
 
 ### net_enode
 
-Returns the [enode URL](../Explanation/Node-Keys.md#enode-url).
+Returns the [enode URL](../Concepts/Node-Keys.md#enode-url).
 
 **Parameters**
 
@@ -414,7 +414,7 @@ None
 
 **Returns**
 
-`result` : *string* - [Enode URL](../Explanation/Node-Keys.md#enode-url) for the node
+`result` : *string* - [Enode URL](../Concepts/Node-Keys.md#enode-url) for the node
 
 !!! example
     ```bash tab="curl HTTP request"
@@ -478,7 +478,7 @@ None
 ## Eth Methods
 
 !!! note
-    Methods with an equivalent [GraphQL](../HowTo/Use/Pantheon-APIs/GraphQL.md) query include a GraphQL request and result in the method example.
+    Methods with an equivalent [GraphQL](../HowTo/Interact/Pantheon-APIs/GraphQL.md) query include a GraphQL request and result in the method example.
     The parameter and result descriptions apply to the JSON-RPC requests. The GraphQL specification is defined in the [schema](https://github.com/PegaSysEng/pantheon/blob/master/ethereum/graphql/src/main/resources/schema.graphqls).  
 
 ### eth_syncing
@@ -548,7 +548,7 @@ None
 
 ### eth_chainId
 
-Returns the [chain ID](../Explanation/NetworkID-And-ChainID.md).
+Returns the [chain ID](../Concepts/NetworkID-And-ChainID.md).
 
 **Parameters**
 
@@ -769,7 +769,7 @@ None
 Returns a list of account addresses that the client owns.
 
 !!!note
-    This method returns an empty object because Pantheon [doesn't support key management](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#account-management)
+    This method returns an empty object because Pantheon [doesn't support key management](../HowTo/Send-Transactions/Account-Management.md)
     inside the client.
     
     Use [EthSigner](http://docs.ethsigner.pegasys.tech/en/latest/) with Pantheon to provide access to your key store and sign transactions.
@@ -859,7 +859,7 @@ Returns the account balance of the specified address.
 
 `DATA` - 20-byte account address from which to retrieve the balance.
 
-`QUANTITY|TAG` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
+`QUANTITY|TAG` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
 
 **Returns**
 
@@ -914,7 +914,7 @@ Returns the value of a storage position at a specified address.
 
 `QUANTITY` - Integer index of the storage position.
 
-`QUANTITY|TAG` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
+`QUANTITY|TAG` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
 
 **Returns**
 
@@ -969,7 +969,7 @@ Returns the number of transactions sent from a specified address. Use the `pendi
 
 `data` - 20-byte account address.
 
-`quantity|tag` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
+`quantity|tag` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
 
 **Returns**
 
@@ -1071,7 +1071,7 @@ Returns the number of transactions in a block matching the specified block numbe
 
 **Parameters**
 
-`QUANTITY|TAG` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
+`QUANTITY|TAG` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
 
 **Returns**
 
@@ -1227,7 +1227,7 @@ Returns uncle specified by block number and index.
 
 **Parameters**
 
-`quantity|tag` - Index of the block, or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
+`quantity|tag` - Index of the block, or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
 
 `quantity` - Index of the uncle.
 
@@ -1369,7 +1369,7 @@ Returns the number of uncles in a block matching the specified block number.
 
 **Parameters**
 
-`QUANTITY|TAG` - Integer representing either the 0-based index of the block within the blockchain, or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
+`QUANTITY|TAG` - Integer representing either the 0-based index of the block within the blockchain, or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
 
 **Returns**
 
@@ -1422,7 +1422,7 @@ Returns the code of the smart contract at the specified address. Compiled smart 
 
 `DATA` - 20-byte contract address.
 
-`QUANTITY|TAG` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
+`QUANTITY|TAG` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
 
 **Returns**
 
@@ -1476,7 +1476,7 @@ You can interact with contracts using [eth_sendRawTransaction or eth_call](../Ho
 To avoid exposing your private key, create signed transactions offline and send the signed transaction data using `eth_sendRawTransaction`. 
 
 !!!important
-    Pantheon does not implement [eth_sendTransaction](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#account-management). 
+    Pantheon does not implement [eth_sendTransaction](../HowTo/Send-Transactions/Account-Management.md). 
     
     [EthSigner](https://docs.ethsigner.pegasys.tech/) provides transaction signing and implements [`eth_sendTransaction`](https://docs.ethsigner.pegasys.tech/Using-EthSigner/Using-EthSigner/#eth_sendtransaction). 
 
@@ -1538,7 +1538,7 @@ You can interact with contracts using [eth_sendRawTransaction or eth_call](../Ho
 
 *OBJECT* - [Transaction call object](Pantheon-API-Objects.md#transaction-call-object).
 
-*QUANTITY|TAG* - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
+*QUANTITY|TAG* - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
 
 **Returns**
 
@@ -1800,7 +1800,7 @@ Returns information about a block by block number.
 
 **Parameters**
 
-`QUANTITY|TAG` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
+`QUANTITY|TAG` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
 
 `Boolean` - If `true`, returns the full [transaction objects](Pantheon-API-Objects.md#transaction-object); if `false`, returns only the hashes of the transactions.
 
@@ -2106,7 +2106,7 @@ Returns transaction information for the specified block number and transaction i
 
 **Parameters**
 
-`QUANTITY|TAG` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
+`QUANTITY|TAG` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
 
 `QUANTITY` - The transaction index position.
 
@@ -2285,7 +2285,7 @@ reasons in the response.
 
 ### eth_newFilter
 
-Creates a [log filter](../Explanation/Events-and-Logs.md). To poll for logs associated with the created filter, use [eth_getFilterChanges](#eth_getfilterchanges).
+Creates a [log filter](../Concepts/Events-and-Logs.md). To poll for logs associated with the created filter, use [eth_getFilterChanges](#eth_getfilterchanges).
 
 **Parameters**
 
@@ -2495,7 +2495,7 @@ Polls the specified filter and returns an array of changes that have occurred si
 
 ### eth_getFilterLogs
 
-Returns an array of [logs](../Explanation/Events-and-Logs.md) for the specified filter.
+Returns an array of [logs](../Concepts/Events-and-Logs.md) for the specified filter.
 
 !!!note
      `eth_getFilterLogs` is only used for filters created with `eth_newFilter`. 
@@ -2550,7 +2550,7 @@ Returns an array of [logs](../Explanation/Events-and-Logs.md) for the specified 
 
 ### eth_getLogs
 
-Returns an array of [logs](../Explanation/Events-and-Logs.md) matching a specified filter object.
+Returns an array of [logs](../Concepts/Events-and-Logs.md) matching a specified filter object.
 
 **Parameters**
 
@@ -2685,7 +2685,7 @@ None
 
 ### clique_discard
 
-Discards a proposal to [add or remove a signer with the specified address](../HowTo/Use/Consensus-Protocols/Clique.md#adding-and-removing-signers). 
+Discards a proposal to [add or remove a signer with the specified address](../HowTo/Configure-Pantheon/Consensus-Protocols/Clique.md#adding-and-removing-signers). 
 
 **Parameters** 
 
@@ -2714,11 +2714,11 @@ Discards a proposal to [add or remove a signer with the specified address](../Ho
 
 ### clique_getSigners
 
-Lists [signers for the specified block](../HowTo/Use/Consensus-Protocols/Clique.md#adding-and-removing-signers). 
+Lists [signers for the specified block](../HowTo/Configure-Pantheon/Consensus-Protocols/Clique.md#adding-and-removing-signers). 
 
 **Parameters** 
 
-`quantity|tag` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter). 
+`quantity|tag` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter). 
 
 **Returns**
 
@@ -2751,9 +2751,9 @@ Provides validator metrics for the specified range:
 
 **Parameters**
 
-`fromBlockNumber` - Integer representing a block number or the string tag `earliest` as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter) 
+`fromBlockNumber` - Integer representing a block number or the string tag `earliest` as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter) 
 
-`toBlockNumber` - Integer representing a block number or one of the string tags `latest` or `pending`, as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter)
+`toBlockNumber` - Integer representing a block number or one of the string tags `latest` or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter)
 
 If no parameters are specified, metrics are provided for the last 100 blocks or all blocks if there are less than 100 blocks.
 
@@ -2831,7 +2831,7 @@ Lists signers for the specified block.
     
 ### clique_propose
 
-Proposes [adding or removing a signer with the specified address](../HowTo/Use/Consensus-Protocols/Clique.md#adding-and-removing-signers). 
+Proposes [adding or removing a signer with the specified address](../HowTo/Configure-Pantheon/Consensus-Protocols/Clique.md#adding-and-removing-signers). 
 
 **Parameters**
 
@@ -2862,7 +2862,7 @@ Proposes [adding or removing a signer with the specified address](../HowTo/Use/C
 
 ### clique_proposals
 
-Returns [current proposals](../HowTo/Use/Consensus-Protocols/Clique.md#adding-and-removing-signers). 
+Returns [current proposals](../HowTo/Configure-Pantheon/Consensus-Protocols/Clique.md#adding-and-removing-signers). 
 
 **Parameters**
 
@@ -3235,7 +3235,7 @@ Returns full trace of all invoked opcodes of all transactions included in the bl
 
 **Parameters**
 
-`quantity|tag` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
+`quantity|tag` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
 
 `Object` - request options (all optional and default to `false`):
 
@@ -3355,7 +3355,7 @@ None
 
 ### ibft_discardValidatorVote
 
-Discards a proposal to [add or remove a validator](../HowTo/Use/Consensus-Protocols/IBFT.md#adding-and-removing-validators) with the specified address. 
+Discards a proposal to [add or remove a validator](../HowTo/Configure-Pantheon/Consensus-Protocols/IBFT.md#adding-and-removing-validators) with the specified address. 
 
 **Parameters** 
 
@@ -3384,7 +3384,7 @@ Discards a proposal to [add or remove a validator](../HowTo/Use/Consensus-Protoc
 
 ### ibft_getPendingVotes
 
-Returns [current votes](../HowTo/Use/Consensus-Protocols/IBFT.md#adding-and-removing-validators). 
+Returns [current votes](../HowTo/Configure-Pantheon/Consensus-Protocols/IBFT.md#adding-and-removing-validators). 
 
 **Parameters**
 
@@ -3455,7 +3455,7 @@ Lists the validators defined in the specified block.
 
 **Parameters** 
 
-`quantity|tag` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter). 
+`quantity|tag` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter). 
 
 **Returns**
 
@@ -3484,7 +3484,7 @@ Lists the validators defined in the specified block.
     
 ### ibft_proposeValidatorVote
 
-Proposes [adding or removing a validator](../HowTo/Use/Consensus-Protocols/IBFT.md#adding-and-removing-validators) with the specified address. 
+Proposes [adding or removing a validator](../HowTo/Configure-Pantheon/Consensus-Protocols/IBFT.md#adding-and-removing-validators) with the specified address. 
 
 **Parameters**
 
@@ -3523,9 +3523,9 @@ Provides validator metrics for the specified range:
 
 **Parameters**
 
-`fromBlockNumber` - Integer representing a block number or the string tag `earliest` as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter) 
+`fromBlockNumber` - Integer representing a block number or the string tag `earliest` as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter) 
 
-`toBlockNumber` - Integer representing a block number or one of the string tags `latest` or `pending`, as described in [Block Parameter](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter)
+`toBlockNumber` - Integer representing a block number or one of the string tags `latest` or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter)
 
 If no parameters are specified, metrics are provided for the last 100 blocks or all blocks if there are less than 100 blocks.
 
@@ -3575,7 +3575,7 @@ parameter to the latest block.
 
 ## Permissioning Methods
 
-The permissioning API methods are used for [local](../HowTo/Use/Permissioning/Local-Permissioning.md) permissioning only.
+The permissioning API methods are used for [local](../HowTo/Limit-Access/Local-Permissioning.md) permissioning only.
 
 !!! important
     The `PERM` API methods are not enabled by default for JSON-RPC. Use the [`--rpc-http-api`](Pantheon-CLI/Pantheon-CLI-Syntax.md#rpc-http-api) 
@@ -3583,7 +3583,7 @@ The permissioning API methods are used for [local](../HowTo/Use/Permissioning/Lo
 
 ### perm_addAccountsToWhitelist
 
-Adds accounts (participants) to the [accounts whitelist](../HowTo/Use/Permissioning/Local-Permissioning.md#account-whitelisting). 
+Adds accounts (participants) to the [accounts whitelist](../HowTo/Limit-Access/Local-Permissioning.md#account-whitelisting). 
 
 **Parameters** 
 
@@ -3616,7 +3616,7 @@ including invalid account addresses.
     
 ### perm_getAccountsWhitelist
 
-Lists accounts (participants) in the [accounts whitelist](../HowTo/Use/Permissioning/Local-Permissioning.md#account-whitelisting). 
+Lists accounts (participants) in the [accounts whitelist](../HowTo/Limit-Access/Local-Permissioning.md#account-whitelisting). 
 
 **Parameters** 
 
@@ -3648,7 +3648,7 @@ None
     
 ### perm_removeAccountsFromWhitelist
 
-Removes accounts (participants) from the [accounts whitelist](../HowTo/Use/Permissioning/Local-Permissioning.md#account-whitelisting). 
+Removes accounts (participants) from the [accounts whitelist](../HowTo/Limit-Access/Local-Permissioning.md#account-whitelisting). 
 
 **Parameters** 
 
@@ -3680,11 +3680,11 @@ including invalid account addresses.
     ```
 ### perm_addNodesToWhitelist
 
-Adds nodes to the [nodes whitelist](../HowTo/Use/Permissioning/Local-Permissioning.md#node-whitelisting). 
+Adds nodes to the [nodes whitelist](../HowTo/Limit-Access/Local-Permissioning.md#node-whitelisting). 
 
 **Parameters** 
 
-`list of strings` - List of [enode URLs](../Explanation/Node-Keys.md#enode-url) 
+`list of strings` - List of [enode URLs](../Concepts/Node-Keys.md#enode-url) 
 
 !!! note 
     The parameters list contains a list which is why the enode URLs are enclosed by double square brackets.
@@ -3713,7 +3713,7 @@ including invalid enode URLs.
     
 ### perm_getNodesWhitelist
 
-Lists nodes in the [nodes whitelist](../HowTo/Use/Permissioning/Local-Permissioning.md#node-whitelisting). 
+Lists nodes in the [nodes whitelist](../HowTo/Limit-Access/Local-Permissioning.md#node-whitelisting). 
 
 **Parameters** 
 
@@ -3721,7 +3721,7 @@ None
 
 **Returns** 
 
-`result: list` - [Enode URLs](../Explanation/Node-Keys.md#enode-url) of nodes in the nodes whitelist. 
+`result: list` - [Enode URLs](../Concepts/Node-Keys.md#enode-url) of nodes in the nodes whitelist. 
 
 !!! example
     ```bash tab="curl HTTP request"
@@ -3745,11 +3745,11 @@ None
     
 ### perm_removeNodesFromWhitelist
 
-Removes nodes from the [nodes whitelist](../HowTo/Use/Permissioning/Local-Permissioning.md#node-whitelisting). 
+Removes nodes from the [nodes whitelist](../HowTo/Limit-Access/Local-Permissioning.md#node-whitelisting). 
 
 **Parameters** 
 
-`list of strings` - List of [enode URLs](../Explanation/Node-Keys.md#enode-url)
+`list of strings` - List of [enode URLs](../Concepts/Node-Keys.md#enode-url)
 
 !!! note 
     The parameters list contains a list which is why the enode URLs are enclosed by double square brackets.
@@ -3778,7 +3778,7 @@ including invalid enode URLs.
     
 ### perm_reloadPermissionsFromFile
 
-Reloads the accounts and nodes whitelists from the [permissions configuration file](../HowTo/Use/Permissioning/Local-Permissioning.md#permissions-configuration-file). 
+Reloads the accounts and nodes whitelists from the [permissions configuration file](../HowTo/Limit-Access/Local-Permissioning.md#permissions-configuration-file). 
 
 **Parameters** 
 
@@ -3897,7 +3897,7 @@ None
 
 ### eea_sendRawTransaction
 
-Creates a [private transaction](../Explanation/Privacy/Privacy-Overview.md) from a signed transaction, generates the transaction hash 
+Creates a [private transaction](../Concepts/Privacy/Privacy-Overview.md) from a signed transaction, generates the transaction hash 
 and submits it to the transaction pool, and returns the transaction hash of the Privacy Marker Transaction.
 
 The signed transaction passed as an input parameter includes the `privateFrom`, `privateFor`, and `restriction` fields.
@@ -3907,9 +3907,9 @@ data using `eea_sendRawTransaction`.
 
 !!! important
     For production systems requiring private transactions, we recommend using a network 
-    with a consensus mechanism supporting transaction finality. For example, [IBFT 2.0](../HowTo/Use/Consensus-Protocols/IBFT.md). 
+    with a consensus mechanism supporting transaction finality. For example, [IBFT 2.0](../HowTo/Configure-Pantheon/Consensus-Protocols/IBFT.md). 
     
-    Pantheon does not implement [`eea_sendTransaction`](../Using-Pantheon/Account-Management.md). 
+    Pantheon does not implement [`eea_sendTransaction`](../HowTo/Send-Transactions/Account-Management.md). 
         
     [EthSigner](https://docs.ethsigner.pegasys.tech/en/latest/) provides transaction signing and implements [`eea_sendTransaction`](https://docs.ethsigner.pegasys.tech/en/latest/Using-EthSigner/Using-EthSigner/#eea_sendtransaction).
 
@@ -3988,7 +3988,7 @@ are not available.
 
 ### priv_getPrivacyPrecompileAddress
 
-Returns the address of the [privacy precompiled contract](../Explanation/Privacy/Private-Transaction-Processing.md). 
+Returns the address of the [privacy precompiled contract](../Concepts/Privacy/Private-Transaction-Processing.md). 
 The address is specified by the [`--privacy-precompiled-address`](Pantheon-CLI/Pantheon-CLI-Syntax.md#privacy-precompiled-address) command line option. 
 
 **Parameters**
@@ -4202,7 +4202,7 @@ Returns the private transaction count for specified account and privacy group.
 
 ### rpc_modules
 
-Lists [enabled APIs](../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#api-methods-enabled-by-default) and the version of each.  
+Lists [enabled APIs](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#api-methods-enabled-by-default) and the version of each.  
 
 **Parameters** 
 

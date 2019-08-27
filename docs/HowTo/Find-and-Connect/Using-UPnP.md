@@ -21,7 +21,7 @@ Use the [`--nat-method`](../../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#nat
 
 When UPnP is enabled: 
 
-* [Enode](../../Explanation/Node-Keys.md#enode-url) advertised to other nodes during discovery is the external IP address and port. 
+* [Enode](../../Concepts/Node-Keys.md#enode-url) advertised to other nodes during discovery is the external IP address and port. 
 * External address and port are returned by the [`admin_NodeInfo`](../../Reference/Pantheon-API-Methods.md#admin_nodeinfo)
   JSON-RPC API method for the `enode` and `listenAddr` properties. 
   

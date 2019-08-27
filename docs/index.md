@@ -18,7 +18,7 @@ Pantheon supports enterprise features including privacy and permissioning.
 
 ## What can you do with Pantheon?
 
-Pantheon includes a [command line interface](Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md) and [JSON-RPC API](HowTo/Use/Pantheon-APIs/Pantheon-API.md)
+Pantheon includes a [command line interface](Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md) and [JSON-RPC API](HowTo/Interact/Pantheon-APIs/Pantheon-API.md)
 for running, maintaining, debugging, and monitoring nodes in an Ethereum network. You can use the API via RPC
 over HTTP or via WebSockets, and Pub/Sub is supported. The API supports typical Ethereum functionalities such as:
 

@@ -79,8 +79,8 @@ Provides password related actions.
 
 ### hash
 
-This command generates the hash of a given password. Include the hash in the [credentials file](../../HowTo/Use/Pantheon-APIs/Authentication.md#credentials-file)
- for JSON-RPC API [authentication](../../HowTo/Use/Pantheon-APIs/Authentication.md). 
+This command generates the hash of a given password. Include the hash in the [credentials file](../../HowTo/Interact/Pantheon-APIs/Authentication.md#credentials-file)
+ for JSON-RPC API [authentication](../../HowTo/Interact/Pantheon-APIs/Authentication.md). 
 
 ```bash tab="Syntax"
 pantheon password hash --password=<my-password>
@@ -96,7 +96,7 @@ Provides operator actions.
 
 ### generate-blockchain-config
 
-This command generates [IBFT 2.0 configuration files](../../Tutorials/Create-IBFT-Network.md). 
+This command generates [IBFT 2.0 configuration files](../../Tutorials/Private-Network/Create-IBFT-Network.md). 
 
 ```bash tab="Syntax"
 pantheon operator generate-blockchain-config --config-file=<FILE> --to=<DIRECTORY> [--genesis-file-name=<FILE>] [--private-key-file-name=<FILE>] [--public-key-file-name=<FILE>]
@@ -107,7 +107,7 @@ pantheon operator generate-blockchain-config --config-file=config.json --to=myNe
 ```
 
 The configuration file has 2 subnested JSON nodes. The first is the `genesis` property defining 
-the [IBFT 2.0 genesis file](../../HowTo/Use/Consensus-Protocols/IBFT.md#genesis-file) except for the `extraData` string. The 
+the [IBFT 2.0 genesis file](../../HowTo/Configure-Pantheon/Consensus-Protocols/IBFT.md#genesis-file) except for the `extraData` string. The 
 second is the `blockchain` property defining the number of key pairs to generate.  
 
 ## rlp
@@ -131,7 +131,7 @@ cat extra_data.json | pantheon rlp encode > rlp.txt
 ```
 
 The `IBFT_EXTRA_DATA` type is the only type supported for RLP encoding.
-This data is included in the [IBFT 2.0 genesis file](../../HowTo/Use/Consensus-Protocols/IBFT.md#genesis-file).
+This data is included in the [IBFT 2.0 genesis file](../../HowTo/Configure-Pantheon/Consensus-Protocols/IBFT.md#genesis-file).
 
 ???+ summary "IBFT 2.0 Extra Data"
     To generate the RLP encoded `extraData` string, specify a JSON input that is array of validator addresses 

@@ -21,7 +21,7 @@ If nodes are not communicating, ensure the [required ports are open](https://doc
 
 If your nodes are running in AWS, check you have appropriate `SecurityGroups` to allow access to the required ports.
 
-Check the [enode URLs](../../Explanation/Node-Keys.md#enode-url) specified for [bootnodes](../Find-and-Connect/Bootnodes.md)
+Check the [enode URLs](../../Concepts/Node-Keys.md#enode-url) specified for [bootnodes](../Find-and-Connect/Bootnodes.md)
 or [static nodes](../Find-and-Connect/Managing-Peers.md#static-nodes) match the enode URLs 
 displayed when the remote nodes are started.
 
@@ -44,12 +44,12 @@ On non-mining nodes, log messages indicate blocks are being imported.
 Use the [`eth_blockNumber`](../../Reference/Pantheon-API-Methods.md#eth_blocknumber) JSON-RPC API method to confirm the 
 block number is increasing. 
 
-If blocks are not being created in [Clique](../Use/Consensus-Protocols/Clique.md#extra-data) or [IBFT 2.0](../Use/Consensus-Protocols/IBFT.md#extra-data) networks, 
+If blocks are not being created in [Clique](../Configure-Pantheon/Consensus-Protocols/Clique.md#extra-data) or [IBFT 2.0](../Configure-Pantheon/Consensus-Protocols/IBFT.md#extra-data) networks, 
 ensure the validator addresses in the genesis file match running nodes. 
  
 ## Transactions Not Being Mined 
 
-If a transaction is added to the [transaction pool](../../Explanation/Transactions/Transaction-Pool.md) 
+If a transaction is added to the [transaction pool](../../Concepts/Transactions/Transaction-Pool.md) 
 and the transaction hash returned but the transaction is never being mined, check the [`--min-gas-price`](../../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#min-gas-price)
 option on mining nodes. If the `gasPrice` on a [transaction](../Send-Transactions/Transactions.md) 
 is lower than the `min-gas-price` for the mining node, the transaction will never be mined. 

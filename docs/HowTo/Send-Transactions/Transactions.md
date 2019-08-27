@@ -28,7 +28,7 @@ and create a smart contract.
     and tools such as [MyCrypto](https://mycrypto.com/) can also be used to create signed transactions.
 
 You can use the example Javascript scripts to create and send raw transactions in the private network 
-created by the [Private Network Quickstart](../../Tutorials/Private-Network-Quickstart.md).
+created by the [Private Network Quickstart](../../Tutorials/Quickstarts/Private-Network-Quickstart.md).
 
 Update the `JSON-RPC endpoint` in the following examples to the endpoint for the private 
 network displayed after running the `./run.sh` script.

@@ -12,7 +12,7 @@ The Options parameter has the following properties:
 
 * `privateKey`: Ethereum private key with which to sign the transaction
 * `privateFrom` : Orion public key of the sender
-* [`privateFor` : Orion public keys of recipients or `privacyGroupId`: Privacy group to receive the transaction](../Explanation/Privacy/Privacy-Groups.md)  
+* [`privateFor` : Orion public keys of recipients or `privacyGroupId`: Privacy group to receive the transaction](../Concepts/Privacy/Privacy-Groups.md)  
 * `nonce` : Optional. If not provided, calculated using [`eea_getTransctionCount`](../Reference/Pantheon-API-Methods.md).
 * `to` : Optional. Contract address to send the transaction to. Do not specify for contract deployment transactions
 * `data` : Transaction data
@@ -100,7 +100,7 @@ Finds privacy groups containing only the specified members.
 
 ## generatePrivacyGroup
     
-Generates the privacy group ID for [EEA privacy](../Explanation/Privacy/Privacy-Groups.md#eea-compliant-privacy). 
+Generates the privacy group ID for [EEA privacy](../Concepts/Privacy/Privacy-Groups.md#eea-compliant-privacy). 
 The privacy group ID is the RLP-encoded `privateFor` and `privateFrom` keys.
     
 **Parameters**
@@ -121,7 +121,7 @@ The privacy group ID is the RLP-encoded `privateFor` and `privateFrom` keys.
 
 ## getMarkerTransaction
 
-Gets the [privacy marker transaction](../Explanation/Privacy/Private-Transaction-Processing.md) transaction receipt.
+Gets the [privacy marker transaction](../Concepts/Privacy/Private-Transaction-Processing.md) transaction receipt.
 
 **Parameters**
 
@@ -189,7 +189,7 @@ Private transaction receipt
 
 Signs and sends a RLP-encoded private transaction to Pantheon using [`eea_sendRawTransaction`](Pantheon-API-Methods.md#eea_sendrawtransaction). 
 
-`sendRawTransaction` supports [EEA-compliant privacy](../HowTo/Use/Privacy-API-Methods/EEA-Compliant.md) using `privateFor`, or [Pantheon-extended privacy](../HowTo/Use/Privacy-API-Methods/Pantheon-Privacy.md) using `privacyGroupId`. 
+`sendRawTransaction` supports [EEA-compliant privacy](../HowTo/Use-Privacy/EEA-Compliant.md) using `privateFor`, or [Pantheon-extended privacy](../HowTo/Use-Privacy/Pantheon-Privacy.md) using `privacyGroupId`. 
 
 **Parameters**
 
@@ -197,7 +197,7 @@ Signs and sends a RLP-encoded private transaction to Pantheon using [`eea_sendRa
 
 **Returns**
 
-`string` : Transaction hash of the [`privacy marker transaction`](../Explanation/Privacy/Private-Transaction-Processing.md)   
+`string` : Transaction hash of the [`privacy marker transaction`](../Concepts/Privacy/Private-Transaction-Processing.md)   
         
 !!! example "Pantheon-extended Privacy"
     ```bash tab="Contract Deployment with privacyGroupId"

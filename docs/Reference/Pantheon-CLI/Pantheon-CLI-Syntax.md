@@ -279,7 +279,7 @@ PANTHEON_HOST_WHITELIST=medomain.com,meotherdomain.com
 host-whitelist=["medomain.com", "meotherdomain.com"]
 ```
 
-Comma-separated list of hostnames to allow [access to the JSON-RPC API](../../HowTo/Use/Pantheon-APIs/Using-JSON-RPC-API.md#host-whitelist). 
+Comma-separated list of hostnames to allow [access to the JSON-RPC API](../../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#host-whitelist). 
 By default, access from `localhost` and `127.0.0.1` is accepted. 
 
 !!!tip
@@ -524,7 +524,7 @@ You must specify a valid coinbase when you enable mining using the [`--miner-ena
 option or the [`miner_start`](../Pantheon-API-Methods.md#miner_start) JSON RPC-API method.
 
 !!!note
-    This option is ignored in networks using [Clique](../../HowTo/Use/Consensus-Protocols/Clique.md) and [IBFT 2.0](../../HowTo/Use/Consensus-Protocols/IBFT.md) consensus protocols. 
+    This option is ignored in networks using [Clique](../../HowTo/Configure-Pantheon/Consensus-Protocols/Clique.md) and [IBFT 2.0](../../HowTo/Configure-Pantheon/Consensus-Protocols/IBFT.md) consensus protocols. 
 
 ### miner-enabled
 
@@ -664,7 +664,7 @@ PANTHEON_NETWORK_ID=8675309
 network-id="8675309"
 ```
 
-[P2P network identifier](../../Explanation/NetworkID-And-ChainID.md).
+[P2P network identifier](../../Concepts/NetworkID-And-ChainID.md).
 
 This option can be used to override the default network ID.
 The default value is the network chain ID defined in the genesis file.
@@ -821,7 +821,7 @@ PANTHEON_PERMISSIONS_ACCOUNTS_CONFIG_FILE=/home/me/me_configFiles/myPermissionsF
 permissions-accounts-config-file="/home/me/me_configFiles/myPermissionsFile"
 ```
 
-Path to the [accounts permissions configuration file](../../HowTo/Use/Permissioning/Local-Permissioning.md#permissions-configuration-file).
+Path to the [accounts permissions configuration file](../../HowTo/Limit-Access/Local-Permissioning.md#permissions-configuration-file).
 Default is the `permissions_config.toml` file in the [data directory](#data-path).
 
 !!! tip
@@ -846,7 +846,7 @@ PANTHEON_PERMISSIONS_ACCOUNTS_CONTRACT_ADDRESS=xyz
 permissions-accounts-contract-address=xyz
 ```
 
-Specifies the contract address for [onchain account permissioning](../../Explanation/Permissioning/Onchain-Permissioning.md).
+Specifies the contract address for [onchain account permissioning](../../Concepts/Permissioning/Onchain-Permissioning.md).
 
 ### permissions-accounts-contract-enabled
 
@@ -866,7 +866,7 @@ PANTHEON_PERMISSIONS_ACCOUNTS_CONTRACT_ENABLED=true
 permissions-accounts-contract-enabled=true
 ```
 
-Enables contract-based [onchain account permissioning](../../Explanation/Permissioning/Onchain-Permissioning.md). Default is `false`.
+Enables contract-based [onchain account permissioning](../../Concepts/Permissioning/Onchain-Permissioning.md). Default is `false`.
 
 ### permissions-nodes-config-file-enabled
 
@@ -906,7 +906,7 @@ PANTHEON_PERMISSIONS_NODES_CONFIG_FILE=/home/me/me_configFiles/myPermissionsFile
 permissions-nodes-config-file="/home/me/me_configFiles/myPermissionsFile"
 ```
 
-Path to the [nodes permissions configuration file](../../HowTo/Use/Permissioning/Local-Permissioning.md#permissions-configuration-file).
+Path to the [nodes permissions configuration file](../../HowTo/Limit-Access/Local-Permissioning.md#permissions-configuration-file).
 Default is the `permissions_config.toml` file in the [data directory](#data-path).
 
 !!! tip
@@ -931,7 +931,7 @@ PANTHEON_PERMISSIONS_NODES_CONTRACT_ADDRESS=xyz
 permissions-nodes-contract-address=xyz
 ```
 
-Specifies the contract address for [onchain node permissioning](../../Explanation/Permissioning/Onchain-Permissioning.md).
+Specifies the contract address for [onchain node permissioning](../../Concepts/Permissioning/Onchain-Permissioning.md).
 
 ### permissions-nodes-contract-enabled
 
@@ -951,7 +951,7 @@ PANTHEON_PERMISSIONS_NODES_CONTRACT_ENABLED=true
 permissions-nodes-contract-enabled=true
 ```
 
-Enables contract-based [onchain node permissioning](../../Explanation/Permissioning/Onchain-Permissioning.md). Default is `false`.
+Enables contract-based [onchain node permissioning](../../Concepts/Permissioning/Onchain-Permissioning.md). Default is `false`.
 
 ### privacy-enabled
 
@@ -971,7 +971,7 @@ PANTHEON_PRIVACY_ENABLED=false
 privacy-enabled=false
 ```
 
-Set to enable [private transactions](../../Explanation/Privacy/Privacy-Overview.md). 
+Set to enable [private transactions](../../Concepts/Privacy/Privacy-Overview.md). 
 The default is false.  
 
 ### privacy-precompiled-address
@@ -980,7 +980,7 @@ The default is false.
 --privacy-precompiled-address=<privacyPrecompiledAddress>
 ```
 
-Address to which the [privacy pre-compiled contract](../../Explanation/Privacy/Private-Transaction-Processing.md) is mapped.
+Address to which the [privacy pre-compiled contract](../../Concepts/Privacy/Private-Transaction-Processing.md) is mapped.
 The default is 126.     
     
 ### privacy-public-key-file
@@ -1001,7 +1001,7 @@ PANTHEON_PRIVACY_PUBLIC_KEY_FILE=Orion/nodeKey.pub
 privacy-public-key-file="Orion/nodeKey.pub"
 ```
 
-Path to the [public key of the Orion node](../../Explanation/Privacy/Privacy-Overview.md#pantheon-and-orion-keys).     
+Path to the [public key of the Orion node](../../Concepts/Privacy/Privacy-Overview.md#pantheon-and-orion-keys).     
 
 ### privacy-url
 
@@ -1021,7 +1021,7 @@ PANTHEON_PRIVACY_URL=http://127.0.0.1:8888
 privacy-url="http://127.0.0.1:8888"
 ```
 
-URL on which the [Orion node](../../Tutorials/Configuring-Privacy.md#4-create-orion-configuration-files) is running.    
+URL on which the [Orion node](../../Tutorials/Privacy/Configuring-Privacy.md#4-create-orion-configuration-files) is running.    
 
 ### revert-reason-enabled
 
@@ -1142,7 +1142,7 @@ PANTHEON_RPC_HTTP_AUTHENTICATION_CREDENTIALS_FILE=/home/me/me_node/auth.toml
 rpc-http-authentication-credentials-file="/home/me/me_node/auth.toml"
 ```
 
-[Credentials file](../../HowTo/Use/Pantheon-APIs/Authentication.md#credentials-file) for JSON-RPC API [authentication](../../HowTo/Use/Pantheon-APIs/Authentication.md). 
+[Credentials file](../../HowTo/Interact/Pantheon-APIs/Authentication.md#credentials-file) for JSON-RPC API [authentication](../../HowTo/Interact/Pantheon-APIs/Authentication.md). 
 
 ### rpc-http-authentication-enabled
 
@@ -1162,7 +1162,7 @@ PANTHEON_RPC_HTTP_AUTHENTICATION_ENABLED=true
 rpc-http-authentication-enabled=true
 ```
 
-Set to `true` to require [authentication](../../HowTo/Use/Pantheon-APIs/Authentication.md) for the HTTP JSON-RPC service.  
+Set to `true` to require [authentication](../../HowTo/Interact/Pantheon-APIs/Authentication.md) for the HTTP JSON-RPC service.  
 
 ### rpc-http-cors-origins
 
@@ -1320,7 +1320,7 @@ PANTHEON_RPC_WS_AUTHENTICATION_CREDENTIALS_FILE=/home/me/me_node/auth.toml
 rpc-ws-authentication-credentials-file="/home/me/me_node/auth.toml"
 ```
 
-[Credentials file](../../HowTo/Use/Pantheon-APIs/Authentication.md#credentials-file) for JSON-RPC API [authentication](../../HowTo/Use/Pantheon-APIs/Authentication.md).
+[Credentials file](../../HowTo/Interact/Pantheon-APIs/Authentication.md#credentials-file) for JSON-RPC API [authentication](../../HowTo/Interact/Pantheon-APIs/Authentication.md).
 
 ### rpc-ws-authentication-enabled
 
@@ -1340,10 +1340,10 @@ PANTHEON_RPC_WS_AUTHENTICATION_ENABLED=true
 rpc-ws-authentication-enabled=true
 ```
 
-Set to `true` to require [authentication](../../HowTo/Use/Pantheon-APIs/Authentication.md) for the WebSockets JSON-RPC service.
+Set to `true` to require [authentication](../../HowTo/Interact/Pantheon-APIs/Authentication.md) for the WebSockets JSON-RPC service.
 
 !!! note 
-    `wscat` does not support headers. [Authentication](../../HowTo/Use/Pantheon-APIs/Authentication.md) requires an authentication token to be passed in the 
+    `wscat` does not support headers. [Authentication](../../HowTo/Interact/Pantheon-APIs/Authentication.md) requires an authentication token to be passed in the 
     request header. To use authentication with WebSockets, an app that supports headers is required. 
 
 ### rpc-ws-enabled
