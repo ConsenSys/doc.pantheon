@@ -1,0 +1,10 @@
+{
+    "ignorePatterns": [
+        {
+            "pattern": "^http(s)?://localhost"
+        },
+        {
+            "pattern": "^http(s)?://127.0.0.1"
+        }
+    ]
+}
