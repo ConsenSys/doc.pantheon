@@ -10,10 +10,10 @@
             "pattern": "^http(s)?://github.com/PegaSysEng/pantheon/community"
         },
         {
-            "pattern": "^http(s)?://ropsten.etherscan.io/txs?block=[0-9]+"
+            "pattern": "^http(s)?://ropsten.etherscan.io/txs?block="
         },
         {
-            "pattern": "^http(s)?://ropsten.etherscan.io/tx/0x.+"
+            "pattern": "^http(s)?://ropsten.etherscan.io/tx/0x"
         }
     ]
 }
