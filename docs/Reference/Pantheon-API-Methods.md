@@ -801,7 +801,7 @@ None
 
 ### eth_blockNumber
 
-Returns the index of the block that the client is currently processing.
+Returns the index corresponding to the block number of the current chain head.
 
 **Parameters**
 
@@ -809,7 +809,7 @@ None
 
 **Returns**
 
-`result` : *QUANTITY* - Hexadecimal integer representing the index of the block that the client is currently processing.
+`result` : *QUANTITY* - Hexadecimal integer representing the index corresponding to the block number of the current chain head.
 
 
 !!! example
