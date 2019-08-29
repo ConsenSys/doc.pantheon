@@ -1,6 +1,6 @@
 # Accessing Logs Using Pantheon API
 
-Subscribe to events, such as logs, using either [RPC Pub/Sub over WebSockets](../Pantheon-API/RPC-PubSub.md) or filters over HTTP.  
+Subscribe to events, such as logs, using either [RPC Pub/Sub over WebSockets](../Pantheon-APIs/RPC-PubSub.md) or filters over HTTP.  
  
 Access logs by using the following Pantheon API methods:
  
