@@ -4072,11 +4072,11 @@ Creates a privacy group containing the specified members. Members are specified 
 
 `Object` - Request options:
 
-* `array of data` - Array of members specified by Orion public keys 
+* `addresses`: `array of data` - Array of members specified by Orion public keys 
 
-* `string` - Privacy group name. Optional.
+* `name`: `string` - Privacy group name. Optional.
 
-* `string` - Privacy group description. Optional.
+* `description`: `string` - Privacy group description. Optional.
 
 **Returns** 
 
