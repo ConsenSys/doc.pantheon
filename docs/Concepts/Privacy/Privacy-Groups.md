@@ -14,6 +14,7 @@ Contracts have the following levels of access between public and private states:
 
 * A contract from a privacy group can read and write to another contract in the same privacy group.
 * A contract from a privacy group cannot access contracts from a different privacy group.
+* A contract from a privacy group cannot read from the public state, including public contracts.
 * A public contract cannot access a private contract.
 
 ## Privacy Types 
