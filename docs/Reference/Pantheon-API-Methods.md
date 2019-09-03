@@ -908,6 +908,8 @@ Returns the account balance of the specified address.
 
 Returns the account and storage values of the specified account, including the merkle proof.
 
+The API allows IoT devices or mobile apps which are unable to run light clients to verify responses from untrusted sources, by using a trusted block hash. 
+
 **Parameters**
 
 `DATA` - 20-byte address of the account or contract.
@@ -920,15 +922,15 @@ Returns the account and storage values of the specified account, including the m
 
 `result`: *Object* - Account details:
 
-* `balance`:`Quantity` - Account balance.
-* `codeHash`:`Data, 32-byte` - Hash of the account's code.
-* `nonce`:`Quantity` - Number of transactions sent from the account.
-* `storageHash`:`Data, 32-byte` - SHA3 of the `storageRoot`.
-* `accountProof`:`Array` - RLP-encoded merkle tree nodes, starting with the `stateRoot`.
+* `balance`:`Quantity` - Account balance
+* `codeHash`:`Data, 32-byte` - Hash of the account code
+* `nonce`:`Quantity` - Number of transactions sent from the account
+* `storageHash`:`Data, 32-byte` - SHA3 of the `storageRoot`
+* `accountProof`:`Array` - RLP-encoded merkle tree nodes, starting with the `stateRoot`
 * `storageProof`:`Array`- Storage entries. Each entry is an object that displays: 
-     * `key`:`Quantity` - The storage key.
-     * `value`:`Quantity` - The storage value. 
-     * `proof`:`Array` - RLP-encoded merkle tree nodes, starting with the `storageHash`.
+     * `key`:`Quantity` - Storage key
+     * `value`:`Quantity` - Storage value
+     * `proof`:`Array` - RLP-encoded merkle tree nodes, starting with the `storageHash`
 
 !!! example
     ```bash tab="curl HTTP" 
