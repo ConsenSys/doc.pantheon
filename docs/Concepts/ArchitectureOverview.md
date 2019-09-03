@@ -1,10 +1,10 @@
-description: Pantheon Architecture 
+description: Besu Architecture 
 <!--- END of page meta data -->
 
-# Pantheon Architecture
+# Besu Architecture
 
-The high-level architecture of Pantheon is: 
+The high-level architecture of Besu is: 
 
 ![Architecture](../images/Architecture.png)
 
-If you've got questions about the architecture of Pantheon, contact us on [gitter](https://gitter.im/PegaSysEng/pantheon). 
+If you've got questions about the architecture of Besu, contact us on [gitter](https://gitter.im/PegaSysEng/besu). 

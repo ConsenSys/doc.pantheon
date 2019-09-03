@@ -1,7 +1,7 @@
-# Contributing to Pantheon
+# Contributing to Besu
 :+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
 
-Welcome to the Pantheon repository!  The following is a set of guidelines for contributing to this 
+Welcome to the Besu repository!  The following is a set of guidelines for contributing to this 
 repo and its packages. These are mostly guidelines, not rules. Use your best judgment, 
 and feel free to propose changes to this document in a pull request.
 
@@ -23,14 +23,14 @@ and feel free to propose changes to this document in a pull request.
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [Pantheon Code of Conduct](CODE-OF-CONDUCT.md).
+This project and everyone participating in it is governed by the [Besu Code of Conduct](CODE-OF-CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable behavior to [private@pegasys.tech].
 
 ## I just have a quick question
 
 > **Note:** Please don't file an issue to ask a question.  You'll get faster results by using the resources below.
 
-* [Pantheon documentation]
+* [Besu documentation]
 * [Gitter]
 
 ## How To Contribute
@@ -139,7 +139,7 @@ This facilitates social contribution, easy testing, and peer review.
 
 To contribute changes, use the following workflow:
 
-1. [**Fork the repository**](https://github.com/PegaSysEng/doc.pantheon/fork).
+1. [**Fork the repository**](https://github.com/PegaSysEng/doc.besu/fork).
 1. **Clone your fork** to your computer.
 1. **Create a topic branch** and name it appropriately.
 Starting the branch name with the issue number is a good practice and a reminder to fix only one issue in a 
@@ -153,7 +153,7 @@ another part of the doc.
     * displaying the doc with [MkDocs] in a preview mode enables you to check the rendering as 
     explained in the [MkDocs And Markdown Guide](MKDOCS-MARKDOWN-GUIDE.md#preview-the-documentation). 
 1. **Push your changes** to your remote fork (usually labeled as `origin`).
-1. **Create a pull-request** (PR) on the Pantheon doc repository. If the PR addresses an existing Jira issue, 
+1. **Create a pull-request** (PR) on the Besu doc repository. If the PR addresses an existing Jira issue, 
 include the issue number in the PR title in square brackets (for example, `[PAN-1234]`). 
 1. **Add labels** to identify the type of your PR. _For example, if your PR fixes a bug, add the "bug" label._
 1. If the PR address an existing Jira issue, comment in the Jira issue with the PR number. 
@@ -164,7 +164,7 @@ let us know on [Gitter]._
 1. **Make any required changes** on your contribution from the reviewers feedback.
 _Make the changes, commit to your branch, and push to your remote fork._
 1. **When your PR is validated**, all tests passed and your branch has no conflicts with the target branch,
-you can **"squash and merge"** your PR and you're done. You contributed to Pantheon documentation! Thanks !
+you can **"squash and merge"** your PR and you're done. You contributed to Besu documentation! Thanks !
 
 ### Pull Requests
 
@@ -215,8 +215,8 @@ in this guide.
 | [`needs engineering approval`][search-label-needs-engineering-approval] | Pull requests which need to be approved from a technical person, mainly documentation PRs. |
 
 [private@pegasys.tech]: mailto:private@pegasys.tech
-[Gitter]: https://gitter.im/PegaSysEng/pantheon
-[Pantheon documentation]: https://docs.pantheon.pegasys.tech/
+[Gitter]: https://gitter.im/PegaSysEng/besu
+[Besu documentation]: https://docs.besu.pegasys.tech/
 [CLA.md]: ./CLA.md
 [Code Reviews]: ./docs/community/code-reviews.md
 [MkDocs]: https://www.mkdocs.org/

@@ -20,7 +20,7 @@ A trash can is displayed.
 
 !!! tip
     If you add a running node, the node does not attempt to reconnect to the bootnode and synchronize until 
-    peer discovery restarts.  To add a whitelisted node as a peer without waiting for peer discovery to restart, use [`admin_addPeer`](../../Reference/Pantheon-API-Methods.md#admin_addpeer). 
+    peer discovery restarts.  To add a whitelisted node as a peer without waiting for peer discovery to restart, use [`admin_addPeer`](../../Reference/API-Methods.md#admin_addpeer). 
 
     If the node is added to the whitelist before starting the node, using `admin_addPeer` is not required because
     peer discovery is run on node startup. 

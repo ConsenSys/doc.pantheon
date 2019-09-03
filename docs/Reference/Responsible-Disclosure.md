@@ -1,4 +1,4 @@
-description: Pantheon responsible disclosure statement.
+description: Besu responsible disclosure statement.
 <!--- END of page meta data -->
 
 # Responsible Disclosure Policy

@@ -1,7 +1,7 @@
 {
-  "name": "doc.pantheon",
+  "name": "doc.besu",
   "version": "1.0.0",
-  "description": "Pantheon doc site",
+  "description": "Besu doc site",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PegaSysEng/doc.pantheon.git"
+    "url": "git+https://github.com/PegaSysEng/doc.besu.git"
   },
   "author": "Consensys/Pegasys",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/PegaSysEng/doc.pantheon/issues"
+    "url": "https://github.com/PegaSysEng/doc.besu/issues"
   },
-  "homepage": "https://github.com/PegaSysEng/doc.pantheon#readme",
+  "homepage": "https://github.com/PegaSysEng/doc.besu#readme",
   "dependencies": {
     "markdown-link-check": "3.7.3"
   }

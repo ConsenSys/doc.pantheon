@@ -1,13 +1,13 @@
-description: Pantheon resources including blog posts, webinars, and meetup recordings. 
+description: Besu resources including blog posts, webinars, and meetup recordings. 
 <!--- END of page meta data -->
 
-# Pantheon Resources 
+# Besu Resources 
 
 ## Blog Posts 
 
-[Privacy in Pantheon: How It Works and Why Your Enterprise Should Care](https://pegasys.tech/privacy-in-pantheon-how-it-works-and-why-your-enterprise-should-care/)
+[Privacy in Besu: How It Works and Why Your Enterprise Should Care](https://pegasys.tech/privacy-in-besu-how-it-works-and-why-your-enterprise-should-care/)
 
-[Permissioning Features in Pantheon](https://pegasys.tech/protecting-the-enterprise-permissioning-features-in-pantheon/)
+[Permissioning Features in Besu](https://pegasys.tech/protecting-the-enterprise-permissioning-features-in-besu/)
 
 [Another day, another consensus algorithm. Why IBFT 2.0?](https://pegasys.tech/another-day-another-consensus-algorithm-why-ibft-2-0/)
 
@@ -19,10 +19,10 @@ description: Pantheon resources including blog posts, webinars, and meetup recor
 
 [Permissioning in Blockchain: A Technical Look at Benefits and Best Practices](https://www.youtube.com/watch?v=CD0pHtNDqZs)
 
-[Privacy in Pantheon: How PegaSys Redefined Blockchain for Enterprises](https://www.youtube.com/watch?v=8l7SSZLyFL8)
+[Privacy in Besu: How PegaSys Redefined Blockchain for Enterprises](https://www.youtube.com/watch?v=8l7SSZLyFL8)
 
 [The Final Word: IBFT 2.0 and Enterprise Consensus](https://www.youtube.com/watch?v=YmTUP_dWfME)
 
-[De-Mystifying Pantheon: Understanding an Ethereum Codebase](https://www.youtube.com/watch?v=OJfib9kTK7U&feature=youtu.be)
+[De-Mystifying Besu: Understanding an Ethereum Codebase](https://www.youtube.com/watch?v=OJfib9kTK7U&feature=youtu.be)
 
-[Getting Started with Pantheon](https://www.youtube.com/watch?v=OKWBr94J9rY&t=1s)
+[Getting Started with Besu](https://www.youtube.com/watch?v=OKWBr94J9rY&t=1s)
