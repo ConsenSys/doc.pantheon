@@ -914,7 +914,7 @@ The API allows IoT devices or mobile apps which are unable to run light clients 
 
 `DATA` - 20-byte address of the account or contract.
 
-`ARRAY` - 32-byte storage values of the account or contract address as described in [eth_getStorageAt](#eth_getstorageat)
+`ARRAY` - Array of 32-byte storage keys to generate proofs for.
 
 `QUANTITY|TAG` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
 
