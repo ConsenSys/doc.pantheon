@@ -108,6 +108,7 @@ nav:
           - Use Alethio EthStats Lite Network Monitor: HowTo/Deploy/Lite-Network-Monitor.md
           - Configure High Availability of APIs: HowTo/Deploy/High-Availability.md
           - Deploy Permissioning Management Dapp: HowTo/Deploy/Production.md
+          - Back Up Your Data: HowTo/Deploy/Back-Up.md
         - Develop Dapps on Pantheon:
           - Use Truffle with Pantheon: HowTo/Develop-Dapps/Truffle.md
         - Troubleshoot:
