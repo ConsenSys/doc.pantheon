@@ -2918,7 +2918,7 @@ Returns the accounts for a specified block.
 
 `result`:`object` - Account details:
 
-* `addressMap`:`object` - Address hash and value
+* `addressMap`:`object` - List of address hashes and values
 * `nextKey`:`data` - Hash of the next address if any addresses are left in the state, otherwise zero
 
 !!! example
