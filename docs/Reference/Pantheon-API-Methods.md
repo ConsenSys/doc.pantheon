@@ -2912,14 +2912,14 @@ Returns the accounts for a specified block.
 
 `address` : `data` - Address hash from which to start
 
-`limit` : `integer` - Number of account entries to return 
+`limit` : `integer` - Maximum number of account entries to return 
 
 **Returns**
 
 `result`:`object` - Account details:
 
 * `addressMap`:`object` - Address hash and value
-* `nextKey`:`data` - Hash of the next address
+* `nextKey`:`data` - Hash of the next address if any addresses are left in the state, otherwise zero
 
 !!! example
     ```bash tab="curl HTTP request"
