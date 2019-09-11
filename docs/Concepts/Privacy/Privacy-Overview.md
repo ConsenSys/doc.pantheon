@@ -4,7 +4,7 @@ description: Privacy
 # Privacy
 
 Privacy in Pantheon refers to the ability to keep transactions private between the involved parties. 
-Other parties cannot access the transaction content, sending party, or list of participating parties. All parties in a private transaction must be online when the transaction is sent.  
+Other parties cannot access the transaction content, sending party, or list of participating parties.
 
 !!! important
     For production systems requiring private transactions, we recommend using a network 
