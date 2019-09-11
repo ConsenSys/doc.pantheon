@@ -19,7 +19,7 @@ privacy group ABC is different to the account nonce for account A for privacy gr
 [`priv_getTransactionCount`](../../Reference/Pantheon-API-Methods.md#priv_gettransactioncount) to get 
 the account nonce for an account for the specified privacy group.
 
-All parties in a private transaction must be online when the transaction is sent. 
+All private transaction parties must be online for a private transaction to be successfully distributed. If any parties are offline when the private transaction is submitted, the transaction fails and must be resubmitted.
 
 !!! note
     If sending more than 1 transaction to be mined in the same block (that is, you're not waiting for 
