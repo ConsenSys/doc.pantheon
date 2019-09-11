@@ -8,7 +8,7 @@ Other parties cannot access the transaction content, sending party, or list of p
 
 !!! important
     For production systems requiring private transactions, we recommend using a network 
-    with a consensus mechanism supporting transaction finality. For example, [IBFT 2.0](../../HowTo/Configure-Pantheon/Consensus-Protocols/IBFT.md). 
+    with a consensus mechanism supporting transaction finality. For example, [IBFT 2.0](../../HowTo/Configure-Pantheon/Consensus-Protocols/IBFT.md). All private transaction parties must be online for a private transaction to be successfully distributed. If any parties are offline when the private transaction is submitted, the transaction fails and must be resubmitted.
 
 ## Private Transaction Manager
 
