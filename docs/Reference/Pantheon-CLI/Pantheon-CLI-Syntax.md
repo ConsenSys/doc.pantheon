@@ -992,7 +992,7 @@ PANTHEON_PRIVACY_MARKER_TRANSACTION_SIGNING_KEY_FILE=/home/me/me_node/myPrivateK
 privacy-marker-transaction-signing-key-file="/home/me/me_node/myPrivateKey"
 ```
 
-`<FILE>` is the name of the private key file used to sign Privacy Marker Transactions. If unset, each transaction is signed with a different randomly generated key.
+`<FILE>` is the name of the private key file used to [sign Privacy Marker Transactions](../../HowTo/Use-Privacy/Sign-Privacy-Marker-Transactions.md). If this option isn't specified, each transaction is signed with a different randomly generated key.
 
 ### privacy-precompiled-address
 
