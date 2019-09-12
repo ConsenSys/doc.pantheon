@@ -17,7 +17,7 @@ includes the host from which you are sending the RPC or `*`.
 
 ## Peers Fail to Connect
 
-If nodes are not communicating, ensure the [required ports are open](https://besu.hyperledger.org/en/stable/Configuring-Besu/Networking/Configuring-Ports/). 
+If nodes are not communicating, ensure the [required ports are open](../../HowTo/Find-and-Connect/Configuring-Ports.md). 
 
 If your nodes are running in AWS, check you have appropriate `SecurityGroups` to allow access to the required ports.
 
