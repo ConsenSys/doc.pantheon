@@ -85,7 +85,7 @@ Use common contractions, such as it’s and you’re, to create a friendly, info
 
 ### Recommend
 It's acceptable to use "we recommend" to introduce a product recommendation.
-Don't use "PegaSys recommends" or "it is recommended."
+Don't use "Hyperledger recommends" or "it is recommended."
 
 Example: Instead of _This is not recommended for production code_ use _We don't recommend this for production code_.
 
