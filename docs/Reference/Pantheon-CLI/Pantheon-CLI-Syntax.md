@@ -1547,3 +1547,6 @@ fast-sync-min-peers=2
 ```
 
 Minimum number of peers required before starting fast sync. Default is 5.
+
+!!! note
+    Synchronizing in FAST mode will cause methods trying to access old world-state data to return `null`
