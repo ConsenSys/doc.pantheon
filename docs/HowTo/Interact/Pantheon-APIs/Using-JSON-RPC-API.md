@@ -119,3 +119,5 @@ The block parameter can have the following values:
 * `latest` : `tag` - Last block mined.
 * `pending` : `tag` - Last block mined plus pending transactions. Use only with [eth_getTransactionCount](../../../Reference/Pantheon-API-Methods.md#eth_gettransactioncount).  
 
+!!! note
+    When synchronizing in FAST mode, methods trying to access old world-state data will return `null`
