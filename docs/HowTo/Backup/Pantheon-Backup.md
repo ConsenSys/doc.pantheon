@@ -40,3 +40,7 @@ If log messages indicate a corrupt database, the cleanest way to recover is:
 1. Stop the node 
 1. Restore the data from a [previous backup](#data-backups). 
 1. Restart the node. 
+
+## Finding Peers on Restarting 
+
+The process for finding peers on restarting is the same as [finding peers after upgrading and restarting](../Upgrade/Upgrade-Network.md). 
