@@ -5,9 +5,9 @@ description: Hyperledger Besu resources including blog posts, webinars, and meet
 
 ## Blog Posts 
 
-[Privacy in Besu: How It Works and Why Your Enterprise Should Care](https://pegasys.tech/privacy-in-besu-how-it-works-and-why-your-enterprise-should-care/)
+[Privacy in Pantheon: How It Works and Why Your Enterprise Should Care](https://pegasys.tech/privacy-in-pantheon-how-it-works-and-why-your-enterprise-should-care/)
 
-[Permissioning Features in Besu](https://pegasys.tech/protecting-the-enterprise-permissioning-features-in-besu/)
+[Permissioning Features in Pantheon](https://pegasys.tech/protecting-the-enterprise-permissioning-features-in-pantheon/)
 
 [Another day, another consensus algorithm. Why IBFT 2.0?](https://pegasys.tech/another-day-another-consensus-algorithm-why-ibft-2-0/)
 
