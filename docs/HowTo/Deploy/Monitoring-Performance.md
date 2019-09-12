@@ -3,7 +3,7 @@ description: Frequently asked questions FAQ and answers for troubleshooting Pant
 
 # Monitoring Pantheon
 
-## Monitor Node Performance Using Prometheus
+## Monitor Node Using Prometheus
 
 Use the [`--metrics-enabled` option](../../Reference/Pantheon-CLI/Pantheon-CLI-Syntax.md#metrics-enabled) to enable the [Prometheus](https://prometheus.io/) monitoring and 
 alerting service to access Pantheon metrics. You can also visualize the collected data using [Grafana](https://grafana.com/).
@@ -20,9 +20,10 @@ To use Prometheus with Pantheon, install the [prometheus main component](https:/
 ```
 
 !!! tip 
-   You can also install:
-   * Exporters and send system metrics to Prometheus to monitor non-Pantheon specific items such as disk usage and CPU usage.  
-   * Other Prometheus components such as the Alert Manager. Additional configuration is not required for these
+    You can also install:
+    
+    * Exporters and send system metrics to Prometheus to monitor non-Pantheon specific items such as disk usage and CPU usage.  
+    * Other Prometheus components such as the Alert Manager. Additional configuration is not required for these
     components because Prometheus handles and analyzes data directly from the feed.
 
 
