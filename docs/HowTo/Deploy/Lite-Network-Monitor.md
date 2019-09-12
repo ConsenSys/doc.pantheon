@@ -105,7 +105,7 @@ Start the EthStats Lite server using in-memory persistence:
 Start Besu in development mode with WebSockets enabled:
 
 ```bash
-docker run --rm -p 8546:8546 pegasyseng/besu:latest --miner-enabled --miner-coinbase fe3b557e8fb62b89f4916b721be55ceb828dbd73 --rpc-http-cors-origins="all" --rpc-ws-enabled --network=dev
+docker run --rm -p 8546:8546 hyperledger/besu:latest --miner-enabled --miner-coinbase fe3b557e8fb62b89f4916b721be55ceb828dbd73 --rpc-http-cors-origins="all" --rpc-ws-enabled --network=dev
 ```
 
 Where `<besudata-path>` is the volume to which the node data is saved. 

@@ -26,10 +26,10 @@ description: Building Hyperledger Besu from source code
 
 ###Clone the Besu Repository
 
-Clone the **PegaSysEng/besu** repo to your home directory (`/home/<user>`):
+Clone the **Hyperledger/besu** repo to your home directory (`/home/<user>`):
 
 ```bash
-git clone --recursive https://github.com/PegaSysEng/besu.git
+git clone --recursive https://github.com/hyperledger/besu.git
 ```
 
 ### Build Besu
@@ -74,11 +74,11 @@ Continue with [Starting Besu](Starting-node.md).
 
 ### Install Besu
 
-In Git bash, go to your working directory for repositories. Clone the `PegaSysEng/besu` repo 
+In Git bash, go to your working directory for repositories. Clone the `Hyperledger/besu` repo 
 into this directory:
 
 ```bat
-git clone --recursive https://github.com/PegaSysEng/besu
+git clone --recursive https://github.com/hyperledger/besu
 ```
 
 ### Build Besu

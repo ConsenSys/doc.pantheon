@@ -47,8 +47,7 @@ issues and PRs assigned to them.
     - Authoring or reviewing PRs on GitHub
     - Filing or commenting on issues on GitHub
     - Contributing to community discussions (e.g. meetings, Slack, email discussion forums, Stack Overflow)
-- Subscribed to [besu-dev@pegasys.tech]
-- Joined [Besu Gitter]
+- Joined [Besu chat]
 - Browsed [Besu documentation]
 - Have read the [contributor guide]
 - Signed ICLA, as described in [CLA.md]
@@ -170,6 +169,5 @@ This document is adapted from the following sources:
 [contributor guide]: ../../CONTRIBUTING.md
 [New contributors]: ../../CONTRIBUTING.md
 [two-factor authentication]: https://help.github.com/articles/about-two-factor-authentication
-[besu-dev@pegasys.tech]: mailto:besu-dev@pegasys.tech
-[Besu Gitter]: https://gitter.im/PegaSysEng/besu
-[Besu Documentation]: https://docs.besu.pegasys.tech/
+[Besu chat]: https://chat.hyperledger.org/channel/besu
+[Besu Documentation]: https://besu.hyperledger.org/

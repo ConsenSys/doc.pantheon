@@ -14,7 +14,7 @@ or [GraphQL](../Interact/APIs/GraphQL.md) queries being handled by the node
 
 ## Determining System Requirements  
 
-To determine system requirements, monitor CPU and disk space requirements using [Prometheus](https://docs.besu.pegasys.tech/en/stable/Monitoring/Monitoring-Performance/#monitor-node-performance-using-prometheus). 
+To determine system requirements, monitor CPU and disk space requirements using [Prometheus](https://besu.hyperledger.org/en/stable/Monitoring/Monitoring-Performance/#monitor-node-performance-using-prometheus). 
 A sample [Grafana dashboard](https://grafana.com/grafana/dashboards/10273) is provided for Besu. 
 
 !!! tip

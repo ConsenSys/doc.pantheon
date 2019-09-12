@@ -16,7 +16,7 @@ Signers take turns to create the next block. Existing signers propose and vote t
 ## Genesis File
 
 To use Clique in a private network, Besu requires a Clique genesis file. When connecting to Rinkeby,
-Besu uses the [`rinkeby.json`](https://github.com/PegaSysEng/besu/blob/master/config/src/main/resources/rinkeby.json) 
+Besu uses the [`rinkeby.json`](https://github.com/hyperledger/besu/blob/master/config/src/main/resources/rinkeby.json) 
 genesis file in the `/besu/config/src/main/resources` directory.
 
 A PoA genesis file defines properties specific to Clique:

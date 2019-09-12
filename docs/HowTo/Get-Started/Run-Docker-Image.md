@@ -21,15 +21,15 @@ Use this Docker image to run a single Besu node without installing Besu.
 To run a Besu node in a container connected to the Ethereum mainnet: 
 
 ```bash tab="latest"
-docker run pegasyseng/besu:latest
+docker run hyperledger/besu:latest
 ```
 
 ```bash tab="{{ versions.stable }}"
-docker run pegasyseng/besu:{{ versions.stable }}
+docker run hyperledger/besu:{{ versions.stable }}
 ```
 
 !!! note
-    `latest` runs the latest cached version. To pull the latest version, use `docker pull pegasyseng/besu:latest`. 
+    `latest` runs the latest cached version. To pull the latest version, use `docker pull hyperledger/besu:latest`. 
  
 ## Exposing Ports
 
@@ -41,13 +41,13 @@ and [`--metrics-push-port`](../../Reference/CLI/CLI-Syntax.md#metrics-push-port)
 
 To run Besu exposing local ports for access: 
 ```bash
-docker run -p <localportJSON-RPC>:8545 -p <localportWS>:8546 -p <localportP2P>:30303 pegasyseng/besu:latest --rpc-http-enabled --rpc-ws-enabled
+docker run -p <localportJSON-RPC>:8545 -p <localportWS>:8546 -p <localportP2P>:30303 hyperledger/besu:latest --rpc-http-enabled --rpc-ws-enabled
 ```
 
 !!!example
     To enable JSON-RPC HTTP calls to `127.0.0.1:8545` and P2P discovery on `127.0.0.1:13001`:
     ```bash
-    docker run -p 8545:8545 -p 13001:30303 pegasyseng/besu:latest --rpc-http-enabled
+    docker run -p 8545:8545 -p 13001:30303 hyperledger/besu:latest --rpc-http-enabled
     ```
      
 ## Starting Besu 
@@ -63,21 +63,21 @@ docker run -p <localportJSON-RPC>:8545 -p <localportWS>:8546 -p <localportP2P>:3
 
 To run a node that mines blocks at a rate suitable for testing purposes with WebSockets enabled: 
 ```bash
-docker run -p 8546:8546 --mount type=bind,source=/<myvolume/besu/testnode>,target=/var/lib/besu pegasyseng/besu:latest --miner-enabled --miner-coinbase fe3b557e8fb62b89f4916b721be55ceb828dbd73 --rpc-ws-enabled --network=dev --data-path=/var/lib/besu
+docker run -p 8546:8546 --mount type=bind,source=/<myvolume/besu/testnode>,target=/var/lib/besu hyperledger/besu:latest --miner-enabled --miner-coinbase fe3b557e8fb62b89f4916b721be55ceb828dbd73 --rpc-ws-enabled --network=dev --data-path=/var/lib/besu
 ```
 
 ### Run a Node on Rinkeby Testnet 
 
 To run a node on Rinkeby: 
 ```bash
-docker run -p 30303:30303 --mount type=bind,source=/<myvolume/besu/rinkeby>,target=/var/lib/besu pegasyseng/besu:latest --network=rinkeby --data-path=/var/lib/besu
+docker run -p 30303:30303 --mount type=bind,source=/<myvolume/besu/rinkeby>,target=/var/lib/besu hyperledger/besu:latest --network=rinkeby --data-path=/var/lib/besu
 ```
 
 ### Run a Node on Ethereum Mainnet 
 
 To run a node on Ethereum mainnet with the HTTP JSON-RPC service enabled: 
 ```bash
-docker run -p 8545:8545 --mount type=bind,source=/<myvolume/besu/rinkeby>,target=/var/lib/besu  -p 30303:30303 pegasyseng/besu:latest --rpc-http-enabled --data-path=/var/lib/besu
+docker run -p 8545:8545 --mount type=bind,source=/<myvolume/besu/rinkeby>,target=/var/lib/besu  -p 30303:30303 hyperledger/besu:latest --rpc-http-enabled --data-path=/var/lib/besu
 ```
 
 ## Stopping Besu and Cleaning up Resources

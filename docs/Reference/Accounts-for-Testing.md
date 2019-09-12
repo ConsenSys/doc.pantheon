@@ -18,7 +18,7 @@ Alternatively, Hyperledger Besu provides predefined accounts in development mode
 ## Genesis File 
  
 To use existing test accounts, specify the accounts and balances in a genesis file for your test network.
-For an example of defining accounts in the genesis file, refer to [`dev.json`](https://github.com/PegaSysEng/besu/blob/master/config/src/main/resources/dev.json).
+For an example of defining accounts in the genesis file, refer to [`dev.json`](https://github.com/hyperledger/besu/blob/master/config/src/main/resources/dev.json).
  
 Use the [`--genesis-file`](CLI/CLI-Syntax.md#genesis-file) command line option to 
 start Besu with the genesis file defining the existing accounts.

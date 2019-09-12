@@ -104,7 +104,7 @@ instructions.
     
     1. Click the blue **Create** button. A form with two fields is displayed. 
     
-    1. In another browser tab or window, open [https://raw.githubusercontent.com/PegaSysEng/besu-quickstart/master/azure/install_and_run.sh](https://raw.githubusercontent.com/PegaSysEng/besu-quickstart/master/azure/install_and_run.sh)
+    1. In another browser tab or window, open [https://raw.githubusercontent.com/Hyperledger/besu-quickstart/master/azure/install_and_run.sh](https://raw.githubusercontent.com/Hyperledger/besu-quickstart/master/azure/install_and_run.sh)
     
     1. Save (++ctrl+s++) this script to your computer, in any location, called `install_and_run.sh`. 
     

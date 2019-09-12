@@ -144,7 +144,7 @@ This data is included in the [IBFT 2.0 genesis file](../../HowTo/Configure/Conse
         ```json
         {
           "$schema": "http://json-schema.org/draft-07/schema#",
-          "$id": "http://tech.pegasys.besu/cli_rlp_ibft_extra_data.json",
+          "$id": "http://org.hyperledger.besu/cli_rlp_ibft_extra_data.json",
           "type": "array",
           "definitions": {},
           "title": "IBFT extra data",

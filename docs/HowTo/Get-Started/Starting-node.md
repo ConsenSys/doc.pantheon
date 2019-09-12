@@ -26,7 +26,7 @@ When [`--network=dev`](../../Reference/CLI/CLI-Syntax.md#network) is specified, 
 development mode genesis configuration with a fixed low difficulty.
 A node started with [`--network=dev`](../../Reference/CLI/CLI-Syntax.md#network) has an empty bootnodes list by default.
 
-The genesis files defining the genesis configurations are in the [Besu source files](https://github.com/PegaSysEng/besu/tree/master/config/src/main/resources). 
+The genesis files defining the genesis configurations are in the [Besu source files](https://github.com/hyperledger/besu/tree/master/config/src/main/resources). 
 
 To define a genesis configuration, create a genesis file (for example, `genesis.json`) and specify the file 
 using the [`--genesis-file`](../../Reference/CLI/CLI-Syntax.md#genesis-file) option.

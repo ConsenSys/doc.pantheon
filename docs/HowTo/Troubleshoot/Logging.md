@@ -27,7 +27,7 @@ the volume of events displayed in the log. Valid log levels are `OFF`, `FATAL`, 
 
 You can provide your own logging configuration using the standard Log4J2 configuration mechanisms.
 For example, the following Log4J2 configuration is the same as the 
-[default configuration](https://github.com/PegaSysEng/besu/blob/master/besu/src/main/resources/log4j2.xml) 
+[default configuration](https://github.com/hyperledger/besu/blob/master/besu/src/main/resources/log4j2.xml) 
 except logging of stack traces for exceptions is excluded.
 
 ```xml tab="debug.xml"

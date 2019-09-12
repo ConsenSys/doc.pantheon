@@ -17,7 +17,7 @@ and create a smart contract.
     The private keys are displayed which means the accounts are not secure.
     
     All accounts and private keys in the examples are from the `dev.json` genesis file in the 
-    [`/besu/ethereum/core/src/main/resources`](https://github.com/PegaSysEng/besu/tree/master/config/src/main/resources) directory.
+    [`/besu/ethereum/core/src/main/resources`](https://github.com/hyperledger/besu/tree/master/config/src/main/resources) directory.
 
     In production environments avoid exposing your private keys by creating signed transactions 
     offline, or use [EthSigner](https://docs.ethsigner.pegasys.tech/) to isolate your private keys and 

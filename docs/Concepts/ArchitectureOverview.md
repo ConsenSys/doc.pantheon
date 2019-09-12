@@ -1,10 +1,11 @@
-description: Besu Architecture 
+description: Hyperledger Besu Architecture 
 <!--- END of page meta data -->
 
-# Besu Architecture
+# Hyperledger Besu Architecture
 
-The high-level architecture of Besu is: 
+The high-level architecture of Hyperledger Besu is: 
 
 ![Architecture](../images/Architecture.png)
 
-If you've got questions about the architecture of Besu, contact us on [gitter](https://gitter.im/PegaSysEng/besu). 
+If you've got questions about the architecture of Hyperledger Besu, 
+contact us on [Hyperledger Besu chat](https://chat.hyperledger.org/channel/besu). 

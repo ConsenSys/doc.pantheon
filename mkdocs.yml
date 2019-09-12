@@ -11,7 +11,7 @@
 
 # Project information
 site_name: Hyperledger Besu
-site_url: https://docs.hyperledger-besu.tech/
+site_url: https://besu.hyperledger.org/
 site_description: Hyperledger Besu Java Ethereum client documentation.
 site_author: Hyperledger Besu community
 copyright: Hyperledger Besu and its documentation are licensed under Apache 2.0 license /

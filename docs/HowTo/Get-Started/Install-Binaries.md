@@ -16,7 +16,7 @@ description: Install Hyperledger Besu from binary distribution
 ### Install Using Homebrew
 
 ```bash
-brew tap pegasyseng/besu
+brew tap hyperledger/besu
 brew install besu
 ```
 Display Besu command line help to confirm installation:
