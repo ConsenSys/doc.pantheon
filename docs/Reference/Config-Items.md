@@ -1,9 +1,9 @@
-description: Configuration items specified in the genesis file 
+description: Configuration items specified in the Hyperledger Besu genesis file 
 <!--- END of page meta data -->
 
 # Configuration Items
 
-Network configuration items are specified in the genesis file.  
+Network configuration items are specified in the Hyperledger Besu genesis file.  
  
 | Item                | Description                                                                                                                              |
 |---------------------|-:----------------------------------------------------------------------------------------------------------------------------------------|

@@ -1,9 +1,13 @@
+description: Hyperledger Besu authentication and Authorization for JSON-RPC
+<!--- END of page meta data -->
+
 # Authentication and Authorization for JSON-RPC
 
 Authentication identifies a user based on a username and password. Authorization verifies whether the user has
 access to the JSON-RPC method they are requesting.  
 
-Besu uses the username and password to authenticate users and [JWT tokens](https://jwt.io/introduction/) to authorize JSON-RPC requests. 
+Hyperledger Besu uses the username and password to authenticate users and 
+[JWT tokens](https://jwt.io/introduction/) to authorize JSON-RPC requests. 
 
 !!! important 
     To prevent interception of authentication credentials and authenticated tokens, make authenticated requests over HTTPS. 

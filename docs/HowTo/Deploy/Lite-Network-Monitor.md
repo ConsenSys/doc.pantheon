@@ -17,7 +17,7 @@ You can also use a full online version of EthStats for the [Ethereum MainNet](ht
 
 !!! tip
     Static local ports 80 and 3000 are used in the example [running EthStats Lite 
-    for a Besu Node](#running-ethstats-lite-for-a-besu-node).  
+    for a Hyperledger Besu Node](#running-ethstats-lite-for-a-besu-node).  
 
 ## Statistics
 

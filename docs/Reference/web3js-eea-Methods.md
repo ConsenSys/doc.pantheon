@@ -19,7 +19,7 @@ The Options parameter has the following properties:
 
 ## createPrivacyGroup
 
-Creates privacy group for Besu privacy. 
+Creates privacy group for Hyperledger Besu privacy. 
 
 **Parameters**
 

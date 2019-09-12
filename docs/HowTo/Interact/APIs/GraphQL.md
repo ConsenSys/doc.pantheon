@@ -1,4 +1,4 @@
-description: How to access the Besu API using GraphQL
+description: How to access the Hyperledger Besu API using GraphQL
 <!--- END of page meta data -->
 
 # GraphQL over HTTP
@@ -14,7 +14,7 @@ The GraphQL service is enabled using the [command line options](API.md#enabling-
 
 ## GraphQL Requests with Curl 
 
-[Besu JSON-RPC API methods](../../../Reference/API-Methods.md) with an equivalent [GraphQL](GraphQL.md) 
+[Hyperledger Besu JSON-RPC API methods](../../../Reference/API-Methods.md) with an equivalent [GraphQL](GraphQL.md) 
 query include a GraphQL request and result in the method example. 
 
 !!! example

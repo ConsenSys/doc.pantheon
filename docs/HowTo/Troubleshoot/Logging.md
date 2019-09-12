@@ -1,11 +1,11 @@
-description: Besu log level setting and log formatting
+description: Hyperledger Besu log level setting and log formatting
 path: blob/master/besu/src/main/resources/
 source: log4j2.xml
 <!--- END of page meta data -->
 
 # Logging
 
-Besu uses Log4J2 for logging. There are two methods to configure logging behavior:
+Hyperledger Besu uses Log4J2 for logging. There are two methods to configure logging behavior:
 
 * Basic - changes the log level. 
 * Advanced - configures the output and format of the logs. 

@@ -1,11 +1,11 @@
-description: Managing Besu peers 
+description: Managing Hyperledger Besu peers 
 <!--- END of page meta data -->
 
 # Managing Peers 
  
 ## Limiting Peers
 
-Limiting peers reduces the bandwidth used by Besu. It also reduces the CPU time and disk access 
+Limiting peers reduces the bandwidth used by Hyperledger Besu. It also reduces the CPU time and disk access 
 used to manage and respond to peers.  
  
 Use the [`--max-peers`](../../Reference/CLI/CLI-Syntax.md#max-peers) command line option to reduce 

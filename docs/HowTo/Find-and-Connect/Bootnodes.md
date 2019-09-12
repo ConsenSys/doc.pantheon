@@ -1,4 +1,4 @@
-description: Besu Clique Proof-of-Authority (PoA) consensus protocol implementation
+description: Hyperledger Besu Clique Proof-of-Authority (PoA) consensus protocol implementation
 path: blob/master/ethereum/core/src/main/resources/
 source: rinkeby.json
 <!--- END of page meta data -->
@@ -9,7 +9,7 @@ Bootnodes are used to initially discover peers.
 
 ## Mainnet and Public Testnets
 
-For mainnet, Rinkeby, Ropsten, and Görli, Besu predefines a list of enode URLs.  
+For mainnet, Rinkeby, Ropsten, and Görli, Hyperledger Besu predefines a list of enode URLs.  
 
 ## Private Networks
 

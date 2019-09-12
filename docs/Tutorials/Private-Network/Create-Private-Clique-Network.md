@@ -1,3 +1,6 @@
+description: Hyperledger Besu private network using Clique (Proof of Authority) Consensus Protocol tutorial 
+<!--- END of page meta data -->
+
 # Creating a Private Network using Clique (Proof of Authority) Consensus Protocol
 
 A private network provides a configurable network for testing. This private network uses the [Clique (Proof of Authority)
@@ -9,7 +12,7 @@ consensus protocol](../../HowTo/Configure/Consensus-Protocols/Clique.md).
 
 ## Prerequisites 
 
-[Besu](../../HowTo/Get-Started/Install-Binaries.md) 
+[Hyperledger Besu](../../HowTo/Get-Started/Install-Binaries.md) 
 
 [Curl (or similar web service client)](https://curl.haxx.se/download.html) 
 

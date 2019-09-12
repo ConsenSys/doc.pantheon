@@ -1,7 +1,7 @@
-description: Besu resources including blog posts, webinars, and meetup recordings. 
+description: Hyperledger Besu resources including blog posts, webinars, and meetup recordings. 
 <!--- END of page meta data -->
 
-# Besu Resources 
+# Hyperledger Besu Resources 
 
 ## Blog Posts 
 

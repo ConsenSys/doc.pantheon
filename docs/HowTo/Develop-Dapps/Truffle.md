@@ -1,9 +1,10 @@
-description: Using Besu with Truffle
+description: Using Hyperledger Besu with Truffle
 <!--- END of page meta data -->
 
-# Using Besu with Truffle 
+# Using Hyperledger Besu with Truffle 
 
-Developing for Besu using Truffle is the same as using Truffle to develop for the public Ethereum networks. 
+Developing for Hyperledger Besu using Truffle is the same as using Truffle to develop for the public
+Ethereum networks. 
 Truffle supports Besu with the only difference being Besu does not implement private key management. 
 To use Besu with Truffle, you must configure a Truffle wallet.
 

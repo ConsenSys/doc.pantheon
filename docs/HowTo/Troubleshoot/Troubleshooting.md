@@ -1,9 +1,9 @@
-description: Frequently asked questions FAQ and answers for troubleshooting Besu
+description: Frequently asked questions FAQ and answers for troubleshooting Hyperledger Besu
 <!--- END of page meta data -->
 
 # Troubleshooting
 
-If Besu is not working as expected, here are some things to check or try. 
+If Hyperledger Besu is not working as expected, here are some things to check or try. 
 
 ## Supplied Genesis Block Does Not Match Stored Chain Data 
 

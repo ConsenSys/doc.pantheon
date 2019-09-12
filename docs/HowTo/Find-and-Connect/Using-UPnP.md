@@ -1,4 +1,4 @@
-description: Configuring UPnP with Besu
+description: Configuring UPnP with Hyperledger Besu
 <!--- END of page meta data -->
 
 # UPnP
@@ -25,7 +25,7 @@ When UPnP is enabled:
 * External address and port are returned by the [`admin_NodeInfo`](../../Reference/API-Methods.md#admin_nodeinfo)
   JSON-RPC API method for the `enode` and `listenAddr` properties. 
   
-While Besu is running, UPnP does not support: 
+While Hyperledger Besu is running, UPnP does not support: 
 
 * IP address changes
 * Disabling UPnP. To disable UPnP, restart the node without the [`--nat-method`](../../Reference/CLI/CLI-Syntax.md#nat-method)

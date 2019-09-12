@@ -1,9 +1,9 @@
-description: JSON-RPC methods to use for EEA-compliant privacy 
+description: Hyperledger Besu JSON-RPC methods to use for EEA-compliant privacy 
 <!--- END of page meta data -->
 
 # Using EEA-compliant Privacy 
 
-When using [EEA-compliant privacy](../../Concepts/Privacy/Privacy-Groups.md), the group of nodes specified by `privateFrom`and `privateFor` form a privacy group and are given a unique 
+When using Hyperledger Besu [EEA-compliant privacy](../../Concepts/Privacy/Privacy-Groups.md), the group of nodes specified by `privateFrom`and `privateFor` form a privacy group and are given a unique 
 privacy group ID by Orion.
 
 Enable the [`EEA` API methods](../../Reference/API-Methods.md#eea-methods) using the [`--rpc-http-api`](../../Reference/CLI/CLI-Syntax.md#rpc-http-api) 

@@ -1,9 +1,9 @@
-description: Passing Java virtual machine JVM options to Besu at runtime
+description: Passing Java virtual machine JVM options to Hyperledger Besu at runtime
 <!--- END of page meta data -->
 
 # Passing JVM Options
 
-To perform tasks such as attaching a debugger or configuring the garbage collector, pass JVM options to Besu.  
+To perform tasks such as attaching a debugger or configuring the garbage collector, pass JVM options to Hyperledger Besu.  
 
 Besu passes the contents of the `BESU_OPTS` environmental variable to the JVM.  Set standard JVM options in the `BESU_OPTS` variable.  
 

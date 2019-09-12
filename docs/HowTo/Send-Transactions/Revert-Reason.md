@@ -1,4 +1,4 @@
-description: Including revert reason in transactions 
+description: Including revert reason in transactions with Hyperledger Besu
 <!--- END of page meta data -->
 
 # Revert Reason 
@@ -28,7 +28,7 @@ information about the error is passed back to the client from the EVM.
 ## Enabling Revert Reason 
 
 Use the [`--revert-reason-enabled`](../../Reference/CLI/CLI-Syntax.md#revert-reason-enabled) command line option
-to include the revert reason in the transaction receipt in Besu. 
+to include the revert reason in the transaction receipt in Hyperledger Besu. 
 
 !!! caution 
     Enabling revert reason may use a significant amount of memory. We do not recommend enabling revert

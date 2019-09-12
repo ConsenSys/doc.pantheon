@@ -1,10 +1,10 @@
-description: Besu high availability 
+description: Hyperledger Besu high availability 
 <!--- END of page meta data -->
 
 # High Availability of JSON-RPC and RPC Rub/Sub APIs
 
 To enable high availability to the [RPC Pub/Sub API over WebSockets](../Interact/APIs/RPC-PubSub.md) 
-or the [JSON-RPC API](../Interact/APIs/Using-JSON-RPC-API.md) run and synchronize multiple Besu 
+or the [JSON-RPC API](../Interact/APIs/Using-JSON-RPC-API.md) run and synchronize multiple Hyperledger Besu 
 nodes to the network. Use a load balancer to distribute requests across nodes in the cluster that 
 are ready to receive requests. 
 

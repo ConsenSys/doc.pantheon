@@ -21,7 +21,7 @@ In a free gas network, transactions still use gas but the gas price is 0 meaning
 
 Transaction cost = gas used * 0 (gas price)    
 
-## Configuring Besu for Free Gas 
+## Configuring Hyperledger Besu for Free Gas 
 
 When gas is free, limiting block and contract sizes is less important. In free gas networks, we increase the 
 block size limit and set the contract size limit to the maximum value.   

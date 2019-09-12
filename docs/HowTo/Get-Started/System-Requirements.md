@@ -1,10 +1,10 @@
-title: System Requirements
+title: Hyperledger Besu System Requirements
 description: System requirements to sync and run Besu 
 <!--- END of page meta data -->
 
 # System Requirements 
 
-The system requirements for Besu depend on a number of factors: 
+The system requirements for Hyperledger Besu depend on a number of factors: 
 
 * Size of the world state for the network
 * Number of transactions submitted to network 

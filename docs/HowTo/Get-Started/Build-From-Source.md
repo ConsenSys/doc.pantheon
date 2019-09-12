@@ -1,4 +1,4 @@
-description: Building Besu from source code
+description: Building Hyperledger Besu from source code
 <!--- END of page meta data -->
 
 # Build from Source
@@ -8,7 +8,7 @@ description: Building Besu from source code
 * [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 !!!important
-    Besu requires Java 11+ to compile; earlier versions are not supported.
+    Hyperledger Besu requires Java 11+ to compile; earlier versions are not supported.
 
 * [Git](https://git-scm.com/downloads) or [GitHub Desktop](https://desktop.github.com/)
 

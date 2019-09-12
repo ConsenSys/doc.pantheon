@@ -1,3 +1,6 @@
+description: Hyperledger Besu private network using Ethash (Proof of Work) Consensus Protocol tutorial 
+<!--- END of page meta data -->
+
 # Creating a Private Network using Ethash (Proof of Work) Consensus Protocol
 
 A private network provides a configurable network for testing. By configuring a low difficulty and enabling 
@@ -11,7 +14,7 @@ You can test multi-block and multi-user scenarios on a private network before mo
 
 ## Prerequisites 
 
-[Besu](../../HowTo/Get-Started/Install-Binaries.md) 
+[Hyperledger Besu](../../HowTo/Get-Started/Install-Binaries.md) 
 
 [Curl (or similar web service client)](https://curl.haxx.se/download.html) 
 

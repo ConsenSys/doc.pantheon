@@ -1,4 +1,4 @@
-description: Configuring Privacy
+description: Configuring Hyperledger Besu privacy
 <!--- END of page meta data -->
 
 # Configuring a Network for Private Transactions 
@@ -8,7 +8,7 @@ description: Configuring Privacy
 * [Orion](https://docs.orion.pegasys.tech/en/latest/Installation/Overview/)
 
 Configuring a network that supports private transactions requires starting an Orion node for each
-Besu node. Besu command line options associate the Besu node with the Orion node. 
+Hyperledger Besu node. Besu command line options associate the Besu node with the Orion node. 
 
 This tutorial assumes you have completed setting up an IBFT 2.0 network to the point where you have 
 [created the genesis file](../Private-Network/Create-IBFT-Network.md#5-create-genesis-file). If not, complete

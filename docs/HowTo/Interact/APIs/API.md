@@ -1,7 +1,7 @@
-description: Besu API
+description: Hyperledger Besu API
 <!--- END of page meta data -->
 
-Access the [Besu API](../../../Reference/API-Methods.md) using:
+Access the [Hyperledger Besu API](../../../Reference/API-Methods.md) using:
 
 * [JSON-RPC over HTTP or WebSockets](Using-JSON-RPC-API.md) 
 * [RPC Pub/Sub over WebSockets](RPC-PubSub.md)

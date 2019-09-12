@@ -1,4 +1,4 @@
-description: Local Permissioning 
+description: Hyperledger Besu Local Permissioning 
 <!--- END of page meta data -->
 
 # Local Permissioning 
@@ -47,7 +47,7 @@ To view the nodes whitelist, use the [perm_getNodesWhitelist](../../Reference/AP
 
 ### Bootnodes
 
-The bootnodes must be included in the nodes whitelist or Besu does not start when node permissions are enabled. 
+The bootnodes must be included in the nodes whitelist or Hyperledger Besu does not start when node permissions are enabled. 
 
 !!! example 
     If you start Besu with specified bootnodes and have node permissioning enabled:

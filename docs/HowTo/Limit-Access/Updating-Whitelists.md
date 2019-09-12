@@ -1,9 +1,9 @@
-description: Updating onchain whitelists
+description: Updating Hyperledger Besu onchain whitelists
 <!--- END of page meta data -->
 
 ## Update Nodes Whitelist  
 
-To add a node to the nodes whitelist: 
+To add a node to the Hyperledger Besu nodes whitelist: 
 
 1. In the _Whitelisted Nodes_ tab of the Permissioning Management Dapp, click the _Add Whitelisted Nodes_
    button. The add node window is displayed.

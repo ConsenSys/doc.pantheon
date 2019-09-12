@@ -18,8 +18,8 @@ data is required.
 [Docker](https://docs.docker.com/install/) or [Node.js](https://nodejs.org/)
 
 !!! tip
-    Using Docker is the easiest way to get started using the Ethereum Lite Explorer with Besu if you 
-    do not have Node.js installed.
+    Using Docker is the easiest way to get started using the Ethereum Lite Explorer with Hyperledger 
+    Besu if you do not have Node.js installed.
 
 ## Run Using Docker
 

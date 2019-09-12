@@ -1,7 +1,7 @@
 {
-  "name": "doc.besu",
+  "name": "hyperledger-besu",
   "version": "1.0.0",
-  "description": "Besu doc site",
+  "description": "Hyperledger Besu doc site",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PegaSysEng/doc.besu.git"
+    "url": "git+https://github.com/hyperledger/besu-docs.git"
   },
-  "author": "Consensys/Pegasys",
+  "author": "Hyperledger Besu community",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/PegaSysEng/doc.besu/issues"
+    "url": "https://github.com/hyperledger/besu-docs/issues"
   },
-  "homepage": "https://github.com/PegaSysEng/doc.besu#readme",
+  "homepage": "https://github.com/hyperledger/besu-docs#readme",
   "dependencies": {
     "markdown-link-check": "3.7.3"
   }

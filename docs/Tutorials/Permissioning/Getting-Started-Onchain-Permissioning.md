@@ -1,9 +1,9 @@
-description: Setting up and using onchain Permissioning
+description: Setting up and using Hyperledger Besu onchain Permissioning
 <!--- END of page meta data -->
 
 # Getting Started with Onchain Permissioning 
 
-The following steps describe bootstrapping a local permissioned network using a Besu node and a 
+The following steps describe bootstrapping a local permissioned network using a Hyperledger Besu node and a 
 development server to run the Permissioning Management Dapp. 
 
 !!! note 

@@ -1,7 +1,7 @@
-description: Frequently asked questions FAQ and answers for troubleshooting Besu use
+description: Frequently asked questions FAQ and answers for troubleshooting Hyperledger Besu use
 <!--- END of page meta data -->
 
-# Monitoring Besu
+# Monitoring Hyperledger Besu
 
 ## Monitor Node Performance and Connectivity Using the JSON-RPC API
 

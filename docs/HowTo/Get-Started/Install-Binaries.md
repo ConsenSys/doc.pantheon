@@ -1,4 +1,4 @@
-description: Install Besu from binary distribution
+description: Install Hyperledger Besu from binary distribution
 <!--- END of page meta data -->
 
 # Install Binary Distribution
@@ -11,7 +11,7 @@ description: Install Besu from binary distribution
 * Java JDK
 
 !!!attention
-    Besu requires Java 11+ to compile; earlier versions are not supported. You can install Java using `brew cask install adoptopenjdk`. Alternatively, you can manually install the [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
+    Hyperledger Besu requires Java 11+ to compile; earlier versions are not supported. You can install Java using `brew cask install adoptopenjdk`. Alternatively, you can manually install the [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
 ### Install Using Homebrew
 

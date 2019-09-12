@@ -1,7 +1,7 @@
-description: Besu JSON-RPC API methods reference
+description: Hyperledger Besu JSON-RPC API methods reference
 <!--- END of page meta data -->
 
-# Besu API Methods
+# Hyperledger Besu API Methods
 
 !!! attention
     All JSON-RPC HTTP examples use the default host and port endpoint `http://127.0.0.1:8545`. 
@@ -916,7 +916,7 @@ The API allows IoT devices or mobile apps which are unable to run light clients 
 
 `ARRAY` - Array of 32-byte storage keys to generate proofs for.
 
-`QUANTITY|TAG` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Interact/Pantheon-APIs/Using-JSON-RPC-API.md#block-parameter).
+`QUANTITY|TAG` - Integer representing a block number or one of the string tags `latest`, `earliest`, or `pending`, as described in [Block Parameter](../HowTo/Interact/APIs/Using-JSON-RPC-API.md#block-parameter).
 
 **Returns**
 

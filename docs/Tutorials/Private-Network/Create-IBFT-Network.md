@@ -1,7 +1,8 @@
-description: Besu IBFT 2.0 Proof-of-Authority (PoA) private network tutorial 
+description: Hyperledger Besu IBFT 2.0 Proof-of-Authority (PoA) private network tutorial 
 <!--- END of page meta data -->
 
-*[Byzantine fault tolerant]: Ability to function correctly and reach consensus despite nodes failing or propagating incorrect information to peers.
+*[Byzantine fault tolerant]: Ability to function correctly and reach consensus despite nodes failing
+or propagating incorrect information to peers.
 
 # Creating a Private Network using IBFT 2.0 (Proof of Authority) Consensus Protocol
 
@@ -17,7 +18,7 @@ consensus protocol](../../HowTo/Configure/Consensus-Protocols/IBFT.md).
 
 ## Prerequisites 
 
-[Besu](../../HowTo/Get-Started/Install-Binaries.md) 
+[Hyperledger Besu](../../HowTo/Get-Started/Install-Binaries.md) 
 
 [Curl (or similar web service client)](https://curl.haxx.se/download.html) 
 

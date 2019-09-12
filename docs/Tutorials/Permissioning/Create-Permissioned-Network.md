@@ -1,4 +1,4 @@
-description: Besu Create a Permissioned network 
+description: Hyperledger Besu Create a Permissioned network 
 <!--- END of page meta data -->
 
 # Creating a Permissioned Network
@@ -12,7 +12,7 @@ The following steps set up a permissioned network with node and account permissi
 
 ## Prerequisites 
 
-[Besu](../../HowTo/Get-Started/Install-Binaries.md) 
+[Hyperledger Besu](../../HowTo/Get-Started/Install-Binaries.md) 
 
 [Curl (or similar web service client)](https://curl.haxx.se/download.html) 
 

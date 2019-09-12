@@ -10,39 +10,41 @@
 # specific language governing permissions and limitations under the License.
 
 # Project information
-site_name: Besu
-site_url: https://docs.besu.pegasys.tech/
-site_description: Besu Java Ethereum client documentation.
-site_author: Besu community
-copyright: Besu and its documentation are licensed under Apache 2.0 license /
-  This <a href="https://readthedocs.org/">Readthedocs.org</a> documentation is maintained with love by <a href="https://pegasys.tech/">PegaSys</a>.
+site_name: Hyperledger Besu
+site_url: https://docs.hyperledger-besu.tech/
+site_description: Hyperledger Besu Java Ethereum client documentation.
+site_author: Hyperledger Besu community
+copyright: Hyperledger Besu and its documentation are licensed under Apache 2.0 license /
+  This <a href="https://readthedocs.org/">Readthedocs.org</a> documentation is maintained with love by <a href="https://pegasys.tech/">Hyperledger Besu community</a>.
 
 #extra project info and template customisation
 extra:
-  doc_site_edit_url: https://github.com/PegaSysEng/doc.besu/
+  doc_site_edit_url: https://github.com/hyperledger/besu-docs/
   versions:
-    stable: &stable_version 1.2.0
+    stable: &stable_version 1.3.0
     quickstart: *stable_version
   latest_version_warning:
     url_contains: /latest/
-    text: 'You are reading Besu development version documentation and
+    text: 'You are reading Hyperledger Besu development version documentation and
     some displayed features may not be available in the stable release.
     You can switch to stable version using the version box at screen bottom.'
   support:
-    gitter: https://gitter.im/PegaSysEng/besu
-    email: support@pegasys.tech
-    pegasys_website: https://pegasys.tech/
+    chat: https://chat.hyperledger.org/channel/besu
+    email: besu@lists.hyperledger.org
+    website: https://www.hyperledger.org/projects/besu
     issues: https://pegasys1.atlassian.net/secure/Dashboard.jspa?selectPageId=10000
   google:
-    site_verification: 'za1cLzyS6LXDGO-pMzvfQdYTZ0Zc67uZtY0asA4YXZ0'
-    tag_manager: 'GTM-5B7N84J'
+    site_verification: 'TODO'
+    tag_manager: 'TODO'
   search:
     language: 'en'
     tokenizer: '[\s]+'
+  logo_regular: logo.svg
+  logo_reversed: &logo_reversed logo-reversed.svg
 
 # Repository
-repo_name: PegaSysEng/besu
-repo_url: https://github.com/PegaSysEng/besu/
+repo_name: hyperledger/besu
+repo_url: https://github.com/hyperledger/besu/
 
 theme:
     name: material
@@ -51,8 +53,7 @@ theme:
         primary: blue-grey
         accent: teal
     favicon: favicon.ico
-    logo:
-      icon: account_balance
+    logo: *logo_reversed
 nav:
     - How To:
         - Get Started with Besu:

@@ -1,9 +1,9 @@
-description: Using third party wallets for account management
+description: Using third party wallets for account management with Hyperledger Besu
 <!--- END of page meta data -->
 
 # Using Wallets for Key Management
 
-Besu doesn't support key management inside the client. Use:
+Hyperledger Besu doesn't support key management inside the client. Use:
 
 * [EthSigner](http://docs.ethsigner.pegasys.tech/en/latest/) with Besu to provide access to your key store and sign transactions.  
 

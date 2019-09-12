@@ -1,9 +1,9 @@
-description: Besu-extended privacy
+description: Hyperledger Besu-extended privacy
 <!--- END of page meta data -->
 
-# Using Besu-extended Privacy 
+# Using Hyperledger Besu-extended Privacy 
 
-Besu provides an extended implementation of privacy by allowing a [privacy
+Hyperledger Besu provides an extended implementation of privacy by allowing a [privacy
 group to be created for a set of participants](../../Concepts/Privacy/Privacy-Groups.md). The privacy group ID 
 must be specified when sending private transactions. 
 

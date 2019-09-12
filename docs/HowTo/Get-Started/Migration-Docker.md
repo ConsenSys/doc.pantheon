@@ -5,7 +5,7 @@ description: Migrating from pre v1.2 Docker image to v1.2 Docker image
 
 ## Before v1.2
 
-The Besu Docker image had an entry-script that automatically added a number of options 
+The Hyperledger Besu Docker image had an entry-script that automatically added a number of options 
 to the Besu command line. The options could not be set using command line arguments.  
 
 The options automatically added to the Besu command line for the Besu Docker image before v1.2 were: 

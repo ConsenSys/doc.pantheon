@@ -1,7 +1,7 @@
-description: Run Besu using the official docker image
+description: Run Hyperledger Besu using the official docker image
 <!--- END of page meta data -->
 
-# Running Besu from Docker Image
+# Running Hyperledger Besu from Docker Image
 
 A Docker image is provided to run a Besu node in a Docker container. 
 

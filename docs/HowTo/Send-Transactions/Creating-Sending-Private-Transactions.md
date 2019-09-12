@@ -1,4 +1,4 @@
-description: Creating and sending private transactions
+description: Creating and sending private transactions with Hyperledger Besu
 <!--- END of page meta data -->
 
 # Creating and Sending Private Transactions 
@@ -21,4 +21,4 @@ the account nonce for an account for the specified privacy group.
 
 !!! note
     If sending more than 1 transaction to be mined in the same block (that is, you're not waiting for 
-    the transaction receipt), you must calculate the private transaction nonce outside Besu. 
+    the transaction receipt), you must calculate the private transaction nonce outside Hyperledger Besu. 

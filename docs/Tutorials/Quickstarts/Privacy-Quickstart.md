@@ -1,9 +1,10 @@
-description: Besu private network with privacy enabled quickstart tutorial
+description: Hyperledger Besu private network with privacy enabled quickstart tutorial
 <!--- END of page meta data -->
 
 # Private Network with Privacy Enabled Quickstart Tutorial
 
-The Private Network with Privacy Enabled Quickstart runs a private network of Besu and Orion nodes managed by Docker Compose.
+The Private Network with Privacy Enabled Quickstart runs a private network of Hyperledger Besu and
+Orion nodes managed by Docker Compose.
 It is an expanded version of the [Private Network Quickstart](Private-Network-Quickstart.md). 
 
 You can use the [Block Explorer](Private-Network-Quickstart.md#block-explorer), 

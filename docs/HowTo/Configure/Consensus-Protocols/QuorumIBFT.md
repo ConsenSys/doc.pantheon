@@ -1,4 +1,4 @@
-description: Besu consensus protocols
+description: Hyperledger Besu consensus protocols
 <!--- END of page meta data -->
 
 # IBFT 1.0 

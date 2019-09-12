@@ -1,8 +1,10 @@
-# Accessing Logs Using Besu API
+description: Accessing Logs Using Hyperledger Besu API
+<!--- END of page meta data -->
+# Accessing Logs Using Hyperledger Besu API
 
 Subscribe to events, such as logs, using either [RPC Pub/Sub over WebSockets](../APIs/RPC-PubSub.md) or filters over HTTP.  
  
-Access logs by using the following Besu API methods:
+Access logs by using the following Hyperledger Besu API methods:
  
 * [`eth_getFilterChanges`](../../../Reference/API-Methods.md#eth_getfilterchanges)
 * [`eth_getFilterLogs`](../../../Reference/API-Methods.md#eth_getfilterlogs)

@@ -1,4 +1,4 @@
-description: Besu command line interface subcommands
+description: Hyperledger Besu command line interface subcommands
 <!--- END of page meta data -->
 
 # Subcommands

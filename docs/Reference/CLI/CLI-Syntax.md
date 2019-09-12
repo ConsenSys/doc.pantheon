@@ -1,9 +1,9 @@
-description: Besu command line interface reference
+description: Hyperledger Besu command line interface reference
 <!--- END of page meta data -->
 
-# Besu Command Line
+# Hyperledger Besu Command Line
 
-This reference describes the syntax of the Besu Command Line Interface (CLI) options and subcommands.
+This reference describes the syntax of the Hyperledger Besu Command Line Interface (CLI) options and subcommands.
 
 ## Specifying Options
 

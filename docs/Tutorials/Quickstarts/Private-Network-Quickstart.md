@@ -1,9 +1,10 @@
-description: Besu private network quickstart tutorial
+description: Hyperledger Besu private network quickstart tutorial
 <!--- END of page meta data -->
 
 # Private Network Quickstart Tutorial
 
-The Private Network Quickstart uses the Besu Docker image to run a private network of Besu nodes managed by Docker Compose.
+The Private Network Quickstart uses the Hyperledger Besu Docker image to run a private network of
+Besu nodes managed by Docker Compose.
 
 !!! important 
     The Private Network Quickstart runs a private network suitable for education or demonstration purposes. 

@@ -1,9 +1,9 @@
-description: Using Besu for PoW CPU mining
+description: Using Hyperledger Besu for PoW CPU mining
 <!--- END of page meta data -->
 
 # Mining
 
-Start Besu with the following options to enable CPU mining: 
+Start Hyperledger Besu with the following options to enable CPU mining: 
 ```bash
 besu --miner-enabled --miner-coinbase <account>
 ```

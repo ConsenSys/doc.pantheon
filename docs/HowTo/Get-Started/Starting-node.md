@@ -1,7 +1,7 @@
-description: Starting Besu
+description: Starting Hyperledger Besu
 <!--- END of page meta data -->
 
-# Starting Besu
+# Starting Hyperledger Besu
 
 Besu nodes can be used for varying purposes as described in the [Overview](../../index.md).
 Nodes can connect to the Ethereum mainnet, public testnets such as Ropsten, or private networks.

@@ -1,4 +1,4 @@
-description: Using RPC Pub/Sub with WebSockets
+description: Using RPC Pub/Sub with Hyperledger Besu WebSockets
 <!--- END of page meta data -->
 
 # RPC Pub/Sub over WebSockets
@@ -7,7 +7,8 @@ description: Using RPC Pub/Sub with WebSockets
 
 Subscribe to events by using either RPC Pub/Sub over WebSockets or [filters over HTTP](../Filters/Accessing-Logs-Using-JSON-RPC.md).
 
-Use RPC Pub/Sub over WebSockets to wait for events instead of polling for them. For example, a Dapp can subscribe to logs to be notified when a specific event has occurred.
+Use RPC Pub/Sub over WebSockets to wait for events instead of polling for them. For example,
+a Dapp can subscribe to logs to be notified when a specific event has occurred.
 
 Methods specific to RPC Pub/Sub are: 
 
@@ -15,7 +16,7 @@ Methods specific to RPC Pub/Sub are:
 * `eth_unsubscribe` - cancel a subscription.
 
 !!!important
-    Unlike other [Besu API methods](../../../Reference/API-Methods.md), 
+    Unlike other [Hyperledger Besu API methods](../../../Reference/API-Methods.md), 
     the RPC Pub/Sub methods cannot be called over HTTP. Use the [`--rpc-ws-enabled`](../../../Reference/CLI/CLI-Syntax.md#rpc-ws-enabled) option to enable
     the WebSockets JSON-RPC service. 
     

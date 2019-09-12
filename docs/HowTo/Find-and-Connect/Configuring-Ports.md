@@ -1,9 +1,10 @@
-description: Ports must be exposed appropriately to enable communication
+description: Hyperledger Besu ports must be exposed appropriately to enable communication
 <!--- END of page meta data -->
 
 # Configuring Ports 
 
-Ports must be exposed appropriately to enable communication. An example port configuration for a Besu node on AWS is: 
+Ports must be exposed appropriately to enable communication. An example port configuration for a 
+Hyperledger Besu node on AWS is: 
                                      
 ![Port Configuration](../../images/PortConfiguration.png)
 

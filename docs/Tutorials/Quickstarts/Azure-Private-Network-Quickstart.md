@@ -1,9 +1,9 @@
-description: Besu private network quickstart on Azure tutorial
+description: Hyperledger Besu private network quickstart on Azure tutorial
 <!--- END of page meta data -->
 
 # Azure Private Network Quickstart Tutorial
 
-This tutorial describes how to use the [Besu quickstart](https://github.com/PegaSysEng/besu-quickstart) 
+This tutorial describes how to use the [Hyperledger Besu quickstart](https://github.com/PegaSysEng/besu-quickstart) 
 to run a private network of Besu nodes in a Docker container in a Linux Virtual 
 machine hosted on Microsoft Azure.
 

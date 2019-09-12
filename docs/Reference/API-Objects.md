@@ -1,7 +1,7 @@
-description: Besu API objects reference
+description: Hyperledger Besu API objects reference
 <!--- END of page meta data -->
 
-# Besu API Objects
+# Hyperledger Besu API Objects
 
 The following objects are parameters for or returned by Besu API Methods.
 

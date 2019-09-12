@@ -1,4 +1,4 @@
-description: How to access the Besu API using JSON-RPC
+description: How to access the Hyperledger Besu API using JSON-RPC
 <!--- END of page meta data -->
 
 # JSON-RPC over HTTP and WebSockets
@@ -11,7 +11,7 @@ and [`--rpc-ws-enabled`](../../../Reference/CLI/CLI-Syntax.md#rpc-ws-enabled) op
 ## Geth Console 
 
 The geth console is a REPL (Read, Evaluate, & Print Loop) Javascript console. Use JSON-RPC APIs supported by geth and 
-Besu directly in the console.  
+Hyperledger Besu directly in the console.  
 
 To use the geth console with Besu: 
 
