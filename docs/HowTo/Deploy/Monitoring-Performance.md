@@ -18,14 +18,19 @@ To specify the host and port on which Prometheus accesses Besu, use the [`--metr
 [`--metrics-port`](../../Reference/CLI/CLI-Syntax.md#metrics-port) options. 
 The default host and port are 127.0.0.1 and 9545.
 
-You can install other Prometheus components such as the Alert Manager. Additional configuration
- is not required for these components because Prometheus handles and analyzes data directly from the feed.
-
 To use Prometheus with Besu, install the [prometheus main component](https://prometheus.io/download/). On MacOS, install with [Homebrew](https://formulae.brew.sh/formula/prometheus): 
 
  ```
  brew install prometheus
 ```
+
+!!! tip 
+    You can also install:
+    
+    * Exporters and send system metrics to Prometheus to monitor non-Pantheon specific items such as disk usage and CPU usage.  
+    * Other Prometheus components such as the Alert Manager. Additional configuration is not required for these
+    components because Prometheus handles and analyzes data directly from the feed.
+
 
 ###  Setting up and Running Prometheus with Besu
 
@@ -69,6 +74,9 @@ block of the `prometheus.yml` file:
     Click the **Graph** tab to view the data as a time-based graph. The query string is displayed below the graph. 
     For example: `{besu_blockchain_height{instance="localhost:9545",job="prometheus"}`
 
+!!! tip 
+    Use a log ingestion tool such as Logstash to parse the logs and alert you to configured anomalies. 
+
 ### Running Prometheus with Besu in Push Mode 
 
 The [`--metrics-enabled`](../../Reference/CLI/CLI-Syntax.md#metrics-enabled) option enables Prometheus polling 
@@ -110,3 +118,8 @@ To configure Prometheus and run with Besu pushing to a push gateway:
     ```
 
 1. View the Prometheus graphical interface as described in [Setting up and Running Prometheus with Besu](#setting-up-and-running-prometheus-with-besu).
+
+## Monitor Node Performance and Connectivity Using the JSON-RPC API
+
+You can monitor node performance using the [`debug_metrics`](../../Reference/Pantheon-API-Methods.md#debug_metrics)
+JSON-RPC API method.
