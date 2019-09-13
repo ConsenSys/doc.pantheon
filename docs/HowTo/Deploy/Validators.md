@@ -5,8 +5,7 @@ description: Configuring validators in production networks
 
 As when [configuring bootnodes](Bootnodes.md):  
 
-1. Create the [node key pair](../../Concepts/Node-Keys.md) (that is, the private and public key) before starting the validator and put
-the private key in the `/opt/pantheon` directory.
+1. Create the [node key pair](../../Concepts/Node-Keys.md) (that is, the private and public key) before starting the validator.
 1. When creating validators in the cloud (for example, AWS, Azure), attempt to assign a static IP to them. 
 If your network is: 
     

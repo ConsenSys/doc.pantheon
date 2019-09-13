@@ -18,7 +18,7 @@ command line option to pass the path to Pantheon.
 
 Having some data reduces the time to synchronise a new node. Periodic backups can be performed of 
 the data directory and the data sent to your preferred backup mechanism. For example, cron job and 
-rsync, or archives to cloud such as s3. 
+rsync, archives to cloud such as s3, or `tar.gz` archives. 
 
 ## Data Restores 
 

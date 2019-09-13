@@ -11,8 +11,7 @@ We do not recommend putting bootnodes behind a load balancer. We recommend putti
 The [enode](../../Concepts/Node-Keys.md#enode-url) of a bootnode is tied to the node public key and IP address. 
 To simplify recovering from complete bootnode failure: 
 
-1. Create the [node key pair](../../Concepts/Node-Keys.md) (that is, the private and public key) before starting the bootnode and put
-the private key in the `/opt/pantheon` directory.
+1. Create the [node key pair](../../Concepts/Node-Keys.md) (that is, the private and public key) before starting the bootnode.
 1. When creating bootnodes in the cloud (for example, AWS, Azure), attempt to assign a static IP to them. If your network is: 
   
     * Publicly accessible, assign an elastic IP. 
