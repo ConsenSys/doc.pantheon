@@ -16,7 +16,7 @@ Create and send private transactions using:
 Separate private states are maintained for each [privacy group](../../Concepts/Privacy/Privacy-Groups.md) so 
 the account nonce for an account is specific to the privacy group. That is, the nonce for account A for
 privacy group ABC is different to the account nonce for account A for privacy group AB. Use 
-[`priv_getTransactionCount`](../../Reference/Pantheon-API-Methods.md#priv_gettransactioncount) to get 
+[`priv_getTransactionCount`](../../Reference/API-Methods.md#priv_gettransactioncount) to get 
 the account nonce for an account for the specified privacy group.
 
 All private transaction participants must be online for a private transaction to be successfully distributed. If any participants are offline when the private transaction is submitted, the transaction is not attempted and must be resubmitted.

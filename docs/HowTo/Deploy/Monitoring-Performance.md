@@ -121,5 +121,5 @@ To configure Prometheus and run with Besu pushing to a push gateway:
 
 ## Monitor Node Performance and Connectivity Using the JSON-RPC API
 
-You can monitor node performance using the [`debug_metrics`](../../Reference/Pantheon-API-Methods.md#debug_metrics)
+You can monitor node performance using the [`debug_metrics`](../../Reference/API-Methods.md#debug_metrics)
 JSON-RPC API method.
